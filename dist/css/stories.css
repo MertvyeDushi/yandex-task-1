@@ -123,13 +123,30 @@ body {
 .list-rectangle {
   border-top-left-radius: .6rem;
   border-top-right-radius: .6rem;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .list-rectangle--1 {
     height: 22.5rem; }
   .list-rectangle--2 {
     height: 32.5rem; }
   .list-rectangle--3 {
     height: 27.5rem; }
+  .list-rectangle__rating {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+    text-align: center;
+    position: absolute;
+    top: 1.8rem; }
+    .list-rectangle__rating--1 {
+      left: 4.2rem;
+      right: 5.8rem; }
+    .list-rectangle__rating--2 {
+      left: 5rem;
+      right: 5rem; }
+    .list-rectangle__rating--3 {
+      left: 5.8rem;
+      right: 4.2rem; }
 
 .list-leaders {
   list-style-type: unset;
