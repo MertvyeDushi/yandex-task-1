@@ -1,0 +1,102 @@
+
+
+.list-person
+	height: 12.6rem
+	width: 10.4rem
+
+	position: relative
+
+	margin-bottom: 1.6rem
+
+
+	&__emoji
+		width: 10.4rem
+
+		font-weight: bold
+		font-size: 3.2rem
+		line-height: 3.2rem
+		text-align: center
+		letter-spacing: .39px
+		color: $color_emoji
+
+		position: absolute
+
+		top: -2.2rem
+
+		z-index: 1
+
+
+	&__value
+		font-size: 1.4rem
+		line-height: 1.6rem
+		text-align: center
+
+		margin-top: .4rem
+
+
+.list-rectangle
+	border-top-left-radius: .6rem
+	border-top-right-radius: .6rem
+
+	width: 100%
+
+
+	&--1
+		height: 22.5rem
+
+
+	&--2
+		height: 32.5rem
+
+
+	&--3
+		height: 27.5rem
+
+
+
+.list-leaders
+	list-style-type: unset
+	height: 100%
+
+
+	&__item
+		width: 12rem
+		height: 100%
+
+		flex-shrink: 0
+
+
+		&--primary
+
+
+			& .list-rectangle
+				background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, $color_bar_chart_primary--1 0%, $color_bar_chart_primary--2 100%)
+				box-shadow: inset -.1rem .1rem .1rem rgba($color_bar_chart_primary--3, .4), inset 0 .6rem 1.5rem rgba($color_bar_chart_primary--4, .4)
+
+
+		&--secondary
+
+
+			& .list-rectangle
+				background: linear-gradient(180deg, rgba($color_bar_chart_secondary--1, 0) -2.22%, rgba($color_bar_chart_secondary--2, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, $color_bar_chart_secondary--3 0%, $color_bar_chart_secondary--4 .01%, $color_bar_chart_secondary--5 100%)
+				box-shadow: inset -.1rem 1rem 1rem rgba($color_bar_chart_secondary--6, .2), inset .2rem .2rem 1.6rem rgba($color_bar_chart_secondary--7, .6)
+
+
+
+		&--1
+			position: relative
+
+			right: -1.6rem
+			z-index: 1
+
+
+		&--2
+			z-index: 2
+
+
+		&--3
+			position: relative
+
+			left: -1.6rem
+			z-index: 1
+

@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/Roboto-Regular.woff2") format("woff2"), url("./fonts/Roboto-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url("./fonts/Roboto-Medium.woff2") format("woff2"), url("./fonts/Roboto-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/Roboto-Bold.woff2") format("woff2"), url("./fonts/Roboto-Bold.woff") format("woff"); }
+
 *,
 *::after,
 *::before {
@@ -12,16 +30,152 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   min-height: 100vh;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: transparent; }
+
+.container {
+  min-width: 100%;
+  min-height: 100vh; }
+  .container.theme_dark {
+    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000 100%);
+    border-radius: 6px; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.7;
-  color: #333; }
+  font-style: normal;
+  line-height: 1.8rem;
+  color: #FCFBF7; }
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.2rem; }
+
+.description-text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: #918F8A; }
 
 .u-df-center {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.u-df-center-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.u-df-column-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+.u-df-column-end-start {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.u-df-column-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column; }
+
+.u-df-column-end-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column; }
+
+.header {
+  padding: 2rem 2.4rem 0; }
+  .header__title {
+    margin-bottom: .8rem; }
+
+.list-person {
+  height: 12.6rem;
+  width: 10.4rem;
+  position: relative;
+  margin-bottom: 1.6rem; }
+  .list-person__emoji {
+    width: 10.4rem;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    letter-spacing: .39px;
+    color: #FCFBF7;
+    position: absolute;
+    top: -2.2rem;
+    z-index: 1; }
+  .list-person__value {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin-top: .4rem; }
+
+.list-rectangle {
+  border-top-left-radius: .6rem;
+  border-top-right-radius: .6rem;
+  width: 100%; }
+  .list-rectangle--1 {
+    height: 22.5rem; }
+  .list-rectangle--2 {
+    height: 32.5rem; }
+  .list-rectangle--3 {
+    height: 27.5rem; }
+
+.list-leaders {
+  list-style-type: unset;
+  height: 100%; }
+  .list-leaders__item {
+    width: 12rem;
+    height: 100%;
+    flex-shrink: 0; }
+    .list-leaders__item--primary .list-rectangle {
+      background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%);
+      box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.4), inset 0 0.6rem 1.5rem rgba(255, 162, 0, 0.4); }
+    .list-leaders__item--secondary .list-rectangle {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
+      box-shadow: inset -0.1rem 1rem 1rem rgba(255, 255, 255, 0.2), inset 0.2rem 0.2rem 1.6rem rgba(103, 103, 103, 0.6); }
+    .list-leaders__item--1 {
+      position: relative;
+      right: -1.6rem;
+      z-index: 1; }
+    .list-leaders__item--2 {
+      z-index: 2; }
+    .list-leaders__item--3 {
+      position: relative;
+      left: -1.6rem;
+      z-index: 1; }
+
+.person {
+  max-height: 10.6rem;
+  width: 10.4rem;
+  text-align: center; }
+  .person__avatar {
+    height: 6.4rem;
+    width: 6.4rem;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    display: inline-block; }
+  .person__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.6rem; }
+
+.main {
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  display: flex; }
+  .main__content {
+    padding: 6.9rem 2.4rem 0;
+    width: 100%;
+    align-self: stretch; }

@@ -6,7 +6,58 @@ html(lang="en")
 		
 		link(rel="stylesheet" href="../css/stories.css")
 		
-		title Yandex Stories | 1st task
+		title Leaders | Yandex Stories | 1st task
 
-	body(class="u-df-center")
-		| Hello world
+	body
+
+		.container(class="u-df-column-between theme_dark")
+		
+			header.header
+				h1.header__title(class="title") Больше всего коммитов
+				p.header__description(class="description-text") Спринт № 213
+
+
+			main.main
+				.main__content
+
+					ul.list-leaders(class="u-df-center-end")
+					
+						li.list-leaders__item.list-leaders__item--secondary.list-leaders__item--1(class="u-df-column-end-start")
+
+							.list-person
+
+								.person
+									img.person__avatar(src="../img/7.jpg" onerror="../img/no_avatar.png" alt="Дмитрий Андриянов")
+									p.person__name Дмитрий Андриянов
+
+								p.list-person__value 22
+
+							.list-rectangle.list-rectangle--1
+
+						li.list-leaders__item.list-leaders__item--primary.list-leaders__item--2(class="u-df-column-end-center")
+
+							.list-person
+
+								p.list-person__emoji 👑
+
+								.person
+									img.person__avatar(src="../img/3.jpg" onerror="../img/no_avatar.png" alt="Дарья Ковалева")
+									p.person__name Дарья Ковалева
+
+								p.list-person__value 32
+
+							.list-rectangle.list-rectangle--2
+
+						li.list-leaders__item.list-leaders__item--secondary.list-leaders__item--3(class="u-df-column-end-end")
+
+							.list-person
+
+								.person
+									img.person__avatar(src="../img/9.jpg" onerror="../img/no_avatar.png" alt="Сергей Бережной")
+									p.person__name Сергей Бережной
+
+								p.list-person__value 27
+									
+							.list-rectangle.list-rectangle--3
+
+
