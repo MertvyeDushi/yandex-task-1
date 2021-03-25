@@ -1,0 +1,83 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		
+		link(rel="stylesheet" href="../css/stories.css")
+		
+		title Vote Results | Yandex Stories | 1st task
+
+	body
+
+		.container(class="u-df-column-between theme_dark")
+		
+			header.header
+				h1.header__title(class="title") Самый 🔎 внимательный разработчик
+				p.header__description(class="description-text") Спринт № 213
+
+
+			main.main
+				.main__content.main__content--vote-results
+
+					ul.list-leaders(class="u-df-center-end")
+					
+						li.list-leaders__item.list-leaders__item--secondary.list-leaders__item--1(class="u-df-column-end-start")
+
+							.list-person
+
+								.person
+									img.person__avatar(src="../img/10.jpg" onerror="../img/no_avatar.png" alt="Яна Берникова")
+									p.person__name Яна Берникова
+
+								p.list-person__value 17 голосов
+
+							.list-rectangle.list-rectangle--1
+								p.list-rectangle__rating.list-rectangle__rating--1 3
+
+
+						li.list-leaders__item.list-leaders__item--primary.list-leaders__item--2(class="u-df-column-end-center")
+
+							.list-person
+
+								p.list-person__emoji 🔎
+
+								.person
+									img.person__avatar(src="../img/1.jpg" onerror="../img/no_avatar.png" alt="Евгений Дементьев")
+									p.person__name Евгений Дементьев
+
+								p.list-person__value 22 голоса
+
+							.list-rectangle.list-rectangle--2
+								p.list-rectangle__rating.list-rectangle__rating--2 1
+							
+
+							.list-person.list-person--float
+
+								p.list-person__emoji 👍
+
+								.person
+									img.person__avatar(src="../img/11.jpg" onerror="../img/no_avatar.png" alt="Юрий Фролов")
+									p.person__name Юрий Фролов
+
+								p.list-person__value 15 голосов
+
+								.list-person__separator(class="separator")
+
+								p.list-rectangle__rating.list-rectangle__rating--float 5
+
+
+						li.list-leaders__item.list-leaders__item--secondary.list-leaders__item--3(class="u-df-column-end-end")
+
+							.list-person
+
+								.person
+									img.person__avatar(src="../img/4.jpg" onerror="../img/no_avatar.png" alt="Вадим Пацев")
+									p.person__name Вадим Пацев
+
+								p.list-person__value 19 голосов
+									
+							.list-rectangle.list-rectangle--3
+								p.list-rectangle__rating.list-rectangle__rating--3 2
+
+
