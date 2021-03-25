@@ -1,0 +1,84 @@
+
+
+.list-vote
+	height: 100%
+	flex-shrink: 1
+
+
+	&__item
+
+
+		&--side
+			padding: 4.5rem 0 4.1rem
+
+
+		&--central
+			padding: 2.3rem 0
+
+
+		.person__name
+			width: 9.6rem
+
+
+	&__person:not(:last-child)
+		margin-bottom: 	6.1rem
+
+
+	&__central-container
+		width: 10.4rem
+		height: 14.2rem
+
+		border-radius: .6rem
+
+		position: relative
+
+
+		&--voted
+			background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, $color_container_voted--1 0%, $color_container_voted--2 100%)
+			box-shadow: inset -.1rem .1rem .1rem rgba($color_container_voted--3, .4), inset 0 .6rem 1.5rem rgba($color_container_voted--4, .4)
+
+			margin-bottom: 2.2rem
+
+
+		&--hovered
+			background: radial-gradient(85.62% 148.33% at 49.85% 100%, rgba($color_container_hovered--1, .7864) 0%, rgba($color_container_hovered--2, .8) 100%)
+			box-shadow: inset -.1rem .1rem .1rem rgba($color_container_hovered--3, .2), inset .2rem .2rem 1.6rem rgba($color_container_hovered--4, .1)
+
+
+	&__emoji
+		width: 10.4rem
+
+		font-weight: bold
+		font-size: 3.2rem
+		line-height: 3.2rem
+		text-align: center
+		letter-spacing: .39px
+		color: $color_emoji
+
+		position: absolute
+
+		top: -.8rem
+
+		z-index: 1
+
+
+	&__btn
+		width: 6.4rem
+		height: 6.4rem
+
+		background: $color_btn_dark
+		-webkit-mask: url(../img/button-dark.svg) no-repeat center / contain
+		mask: url(../img/button-dark.svg) no-repeat center / contain
+
+
+		&--disabled
+			background: $color_btn_dark--hover
+
+
+		&--up
+			transform: rotate(-180deg)
+			margin-bottom: 2.3rem
+
+
+		&--down
+			margin-top: 2.3rem
