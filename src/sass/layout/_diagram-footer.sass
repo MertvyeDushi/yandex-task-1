@@ -1,0 +1,60 @@
+
+
+.diagram-footer
+	padding: 0 2.4rem 2.4rem
+	width: 100%
+
+
+	&__item
+
+
+		&:not(:first-child)
+			padding-top: 1.6rem
+		
+		
+		&:not(:last-child)
+			padding-bottom: 1.6rem
+			border-bottom: .2rem solid rgba($color_footer_separatop, .3)
+
+
+	&__dot
+		width: 1.6rem
+		height: 1.6rem
+
+		border-radius: 50%
+
+		margin-right: 1rem
+
+
+		&--1
+			background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba($color_footer_dot--1, .8) 71.88%, rgba($color_footer_dot--2, .8) 100%)
+			box-shadow: 0 0 2rem -.8rem rgba($color_footer_dot--3, .2), inset -.1rem .1rem .1rem rgba($color_footer_dot--4, .5), inset 0 0 2rem rgba($color_footer_dot--5, .9)
+			
+
+		&--2
+			background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba($color_footer_dot--6, .5) 72.92%, rgba($color_footer_dot--7, .5) 100%)
+			box-shadow: 0 0 2rem -.8rem rgba($color_footer_dot--8, 0.2), inset -.1rem .1rem .1rem rgba($color_footer_dot--9, .5), inset 0 0 2rem rgba($color_footer_dot--10, .9)
+
+
+		&--3
+			background: radial-gradient(100% 100% at 50% 0%, rgba($color_footer_dot--11, .5) 0%, rgba($color_footer_dot--12, .5) 100%)
+			box-shadow: inset -.1rem .1rem .1rem rgba($color_footer_dot--13, .5)
+
+
+		&--4
+			background: radial-gradient(100% 100% at 50% 0%, rgba($color_footer_dot--14, .5) 0%, rgba($color_footer_dot--15, .5) 100%)
+			box-shadow: inset -.1rem .1rem .1rem rgba($color_footer_dot--16, .5)
+
+
+	&__rows
+		font-weight: 500
+
+
+	&__prev, &__current
+		font-weight: 500
+		text-align: right
+		color: $color_chart_list_value
+
+
+	&__prev
+		margin-right: 1.6rem

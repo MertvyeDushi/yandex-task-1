@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		
+		link(rel="stylesheet" href="../css/stories.css")
+		
+		title Diagram | Yandex Stories | 1st task
+
+	body
+
+		.container(class="u-df-column-between theme_dark")
+		
+			header.header
+				h1.header__title(class="title") Размер коммитов
+				p.header__description(class="description-text") Спринт № 213
+
+
+			main.main
+				.main__content.main__content--diagram(class="u-df-center")
+
+					.diagram-container
+
+						.diagram(class="u-df-center")
+							img.diagram__unit.diagram__unit--1(src="../img/ellipse_1.svg")
+							img.diagram__unit.diagram__unit--2(src="../img/ellipse_2.svg")
+							img.diagram__unit.diagram__unit--3(src="../img/ellipse_3.svg")
+							img.diagram__unit.diagram__unit--4(src="../img/ellipse_4.svg")
+
+							.diagram__content(class="u-df-column-center")
+								.diagram__number 182 коммита
+								.diagram__plus +42 с прошлого спринта
+
+
+
+
+						
+
+
+
+			footer.diagram-footer
+
+				ul.diagram-footer__list
+
+					li.diagram-footer__item(class="u-df-center-between")
+
+						.diagram-footer__left(class="u-df-center-start")
+							.diagram-footer__dot.diagram-footer__dot--1
+							.diagram-footer__rows > 1001 строки
+
+						.diagram-footer__right(class="u-df-center-end")
+							.diagram-footer__prev +8
+							.diagram-footer__current 30
+
+					li.diagram-footer__item(class="u-df-center-between")
+
+						.diagram-footer__left(class="u-df-center-start")
+							.diagram-footer__dot.diagram-footer__dot--2
+							.diagram-footer__rows 501 — 1000 строк
+
+						.diagram-footer__right(class="u-df-center-end")
+							.diagram-footer__prev +6
+							.diagram-footer__current 32
+
+					li.diagram-footer__item(class="u-df-center-between")
+
+						.diagram-footer__left(class="u-df-center-start")
+							.diagram-footer__dot.diagram-footer__dot--3
+							.diagram-footer__rows 101 — 500 строк
+
+						.diagram-footer__right(class="u-df-center-end")
+							.diagram-footer__prev +16
+							.diagram-footer__current 58
+
+					li.diagram-footer__item(class="u-df-center-between")
+
+						.diagram-footer__left(class="u-df-center-start")
+							.diagram-footer__dot.diagram-footer__dot--4
+							.diagram-footer__rows 1 — 100 строк
+
+						.diagram-footer__right(class="u-df-center-end")
+							.diagram-footer__prev +12
+							.diagram-footer__current 62
+
+
+
