@@ -4,7 +4,7 @@ const path = require('path')
 
 const app = express()
  
-app.use('/', serveStatic(path.join(__dirname, '/dist/templates')))
+app.use('/', serveStatic( path.join(__dirname, '/build/templates')))
  
 const port = 8080
 app.listen(port)

@@ -9,17 +9,17 @@
 	margin-bottom: 1.6rem
 
 
-	&--1, &--3
+	&--0, &--1, &--3, &--4
 		position: absolute
 		top: -14.2rem
 
 
-	&--1
+	&--0, &--1
 		left: 43.61%
 		transform: translateX(-50%)
 
 
-	&--3
+	&--3, &--4
 		right: 43.61%
 		transform: translateX(50%)
 
@@ -71,8 +71,16 @@
 	position: relative
 
 
+	&--0, &--4
+		height: 27.2%
+
+
 	&--1
 		height: 46.015% // 22.5rem
+
+
+		@media screen and (orientation: landscape)
+			height: 35.2% // 8.8rem
 
 
 	&--2
@@ -81,6 +89,10 @@
 
 	&--3
 		height: 56.239% // 27.5rem
+
+
+		@media screen and (orientation: landscape)
+			height: 35.2% // 8.8rem
 
 
 	&__rating
@@ -94,7 +106,7 @@
 		top: 1.8rem
 
 
-		&--1
+		&--0, &--1
 			transform: translateX(-50%)
 			left: 43.61% // 4.2rem
 
@@ -104,7 +116,7 @@
 			right: 0
 
 
-		&--3
+		&--3, &--4
 			transform: translateX(50%)
 			right: 43.61% // 4.2rem
 
@@ -129,6 +141,10 @@
 		position: relative
 
 
+		@media screen and (orientation: landscape)
+			width: 19.356% // 12rem
+
+
 		&--primary
 
 
@@ -146,11 +162,26 @@
 
 
 
-		&--1
+		&--0, &--1, &--3, &--4
 			position: relative
 
+
+		&--0
+			display: none
+
+
+			@media screen and (orientation: landscape)
+				display: flex
+				right: calc( -2.581% * 2 )
+
+
+		&--1
 			right: -4.879% // -1.6rem
 			z-index: 1
+
+
+			@media screen and (orientation: landscape)
+				right: -2.581%
 
 
 		&--2
@@ -158,8 +189,18 @@
 
 
 		&--3
-			position: relative
-
 			left: -4.879% // -1.6rem
 			z-index: 1
 
+
+			@media screen and (orientation: landscape)
+				left: -2.581%
+
+
+		&--4
+			display: none
+
+
+			@media screen and (orientation: landscape)
+				display: flex
+				left: calc( -2.581% * 2 )
