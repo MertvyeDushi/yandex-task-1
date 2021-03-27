@@ -3,6 +3,10 @@
 .activity-map
 	max-width: 450px
 	width: 100%
+
+
+	@media screen and (orientation: landscape)
+		max-width: 660px
 	
 
 	&__list
@@ -13,6 +17,29 @@
 	&__list-item
 		display: inline-block
 		width: calc( 100% / 7 )
+
+
+		@media screen and (orientation: landscape)
+			width: 100%
+			position: relative
+
+
+			&:nth-child(odd)
+				// left: -4.166%
+				left: -2.083%
+
+
+			&:nth-child(even)
+				// right: -4.166%
+				right: -2.083%
+
+
+			// Смертельный номер
+			@for $i from 0 through 24
+
+				&:nth-child(#{ $i })
+					z-index: $i
+			//
 
 
 	&__item-list
@@ -33,6 +60,10 @@
 
 			&:nth-child(#{ $i })
 				z-index: $i
+
+
+				@media screen and (orientation: landscape)
+					z-index: unset
 		//
 
 
@@ -40,8 +71,16 @@
 			left: -25%
 
 
+			@media screen and (orientation: landscape)
+				left: unset
+
+
 		&:nth-child(even)
 			right: -25%
+
+
+			@media screen and (orientation: landscape)
+				right: unset
 
 
 		&-container

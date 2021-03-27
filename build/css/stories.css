@@ -50,13 +50,13 @@ body {
   border: none; }
 
 @media screen and (orientation: landscape) {
-  .horizontal {
+  .vertical {
     display: none !important; } }
 
-.vertical {
+.horizontal {
   display: none !important; }
   @media screen and (orientation: landscape) {
-    .vertical {
+    .horizontal {
       display: flex !important; } }
 
 body {
@@ -238,6 +238,10 @@ body {
   width: 100%;
   padding: 0 2.4rem 2.4rem;
   margin-top: 4.967rem; }
+  @media screen and (orientation: landscape) {
+    .activity-footer {
+      padding: 0 16.8rem 5.8rem;
+      margin-top: 3.2rem; } }
 
 .list-person {
   height: 12.6rem;
@@ -537,6 +541,9 @@ body {
     text-align: left;
     font-weight: 500;
     color: #918F8A; }
+    @media screen and (orientation: landscape) {
+      .legend-list__description {
+        text-align: center; } }
 
 .person {
   max-height: 10.6rem;
@@ -599,12 +606,73 @@ body {
 .activity-map {
   max-width: 450px;
   width: 100%; }
+  @media screen and (orientation: landscape) {
+    .activity-map {
+      max-width: 660px; } }
   .activity-map__list {
     list-style-type: unset;
     width: 100%; }
   .activity-map__list-item {
     display: inline-block;
     width: calc( 100% / 7); }
+    @media screen and (orientation: landscape) {
+      .activity-map__list-item {
+        width: 100%;
+        position: relative; }
+        .activity-map__list-item:nth-child(odd) {
+          left: -2.083%; }
+        .activity-map__list-item:nth-child(even) {
+          right: -2.083%; }
+        .activity-map__list-item:nth-child(0) {
+          z-index: 0; }
+        .activity-map__list-item:nth-child(1) {
+          z-index: 1; }
+        .activity-map__list-item:nth-child(2) {
+          z-index: 2; }
+        .activity-map__list-item:nth-child(3) {
+          z-index: 3; }
+        .activity-map__list-item:nth-child(4) {
+          z-index: 4; }
+        .activity-map__list-item:nth-child(5) {
+          z-index: 5; }
+        .activity-map__list-item:nth-child(6) {
+          z-index: 6; }
+        .activity-map__list-item:nth-child(7) {
+          z-index: 7; }
+        .activity-map__list-item:nth-child(8) {
+          z-index: 8; }
+        .activity-map__list-item:nth-child(9) {
+          z-index: 9; }
+        .activity-map__list-item:nth-child(10) {
+          z-index: 10; }
+        .activity-map__list-item:nth-child(11) {
+          z-index: 11; }
+        .activity-map__list-item:nth-child(12) {
+          z-index: 12; }
+        .activity-map__list-item:nth-child(13) {
+          z-index: 13; }
+        .activity-map__list-item:nth-child(14) {
+          z-index: 14; }
+        .activity-map__list-item:nth-child(15) {
+          z-index: 15; }
+        .activity-map__list-item:nth-child(16) {
+          z-index: 16; }
+        .activity-map__list-item:nth-child(17) {
+          z-index: 17; }
+        .activity-map__list-item:nth-child(18) {
+          z-index: 18; }
+        .activity-map__list-item:nth-child(19) {
+          z-index: 19; }
+        .activity-map__list-item:nth-child(20) {
+          z-index: 20; }
+        .activity-map__list-item:nth-child(21) {
+          z-index: 21; }
+        .activity-map__list-item:nth-child(22) {
+          z-index: 22; }
+        .activity-map__list-item:nth-child(23) {
+          z-index: 23; }
+        .activity-map__list-item:nth-child(24) {
+          z-index: 24; } }
   .activity-map__item-list {
     list-style-type: unset;
     width: 100%; }
@@ -615,58 +683,139 @@ body {
     width: 100%; }
     .activity-map__bar:nth-child(0) {
       z-index: 0; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(0) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(1) {
       z-index: 1; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(1) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(2) {
       z-index: 2; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(2) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(3) {
       z-index: 3; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(3) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(4) {
       z-index: 4; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(4) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(5) {
       z-index: 5; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(5) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(6) {
       z-index: 6; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(6) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(7) {
       z-index: 7; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(7) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(8) {
       z-index: 8; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(8) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(9) {
       z-index: 9; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(9) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(10) {
       z-index: 10; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(10) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(11) {
       z-index: 11; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(11) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(12) {
       z-index: 12; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(12) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(13) {
       z-index: 13; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(13) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(14) {
       z-index: 14; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(14) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(15) {
       z-index: 15; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(15) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(16) {
       z-index: 16; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(16) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(17) {
       z-index: 17; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(17) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(18) {
       z-index: 18; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(18) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(19) {
       z-index: 19; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(19) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(20) {
       z-index: 20; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(20) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(21) {
       z-index: 21; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(21) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(22) {
       z-index: 22; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(22) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(23) {
       z-index: 23; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(23) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(24) {
       z-index: 24; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(24) {
+          z-index: unset; } }
     .activity-map__bar:nth-child(odd) {
       left: -25%; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(odd) {
+          left: unset; } }
     .activity-map__bar:nth-child(even) {
       right: -25%; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar:nth-child(even) {
+          right: unset; } }
     .activity-map__bar-container {
       position: relative;
       height: 0;
@@ -717,6 +866,9 @@ body {
           padding: 3.3rem 15% 0; } }
     .main__content--activity {
       padding: 6.644rem 3.54rem 0; }
+      @media screen and (orientation: landscape) {
+        .main__content--activity {
+          padding: 6.644rem 12.1rem 0; } }
 
 .diagram-content {
   width: 100%;

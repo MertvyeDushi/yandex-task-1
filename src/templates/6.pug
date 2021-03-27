@@ -17,19 +17,20 @@ html(lang="en")
 				p.header__description(class="description-text") Спринт № 213
 
 
-			main.main
+			//- vertical
+			main.main(class="vertical")
 				.main__content.main__content--activity(class="u-df-center")
 
 					.activity-map(class="u-df-center")
 
-						ul.activity-map__list(class="u-df-center")
+						ul.activity-map__list(class="u-df-center") <!-- Неделя -->
 						
 
-							li.activity-map__list-item.activity-map__list-item--1 <!-- 1 -->
+							li.activity-map__list-item <!-- 1-ый день -->
 
-								ul.activity-map__item-list(class="u-df-column-center")
+								ul.activity-map__item-list(class="u-df-column-center") <!-- Список часов первого дня -->
 
-									li.activity-map__bar.activity-map__bar--min
+									li.activity-map__bar.activity-map__bar--min <!-- 1-ый час -->
 										.activity-map__bar-container
 											.activity-map__bar-content
 												img.activity-map__bar-img(src="../img/min-dark.svg")
@@ -898,6 +899,486 @@ html(lang="en")
 										.activity-map__bar-container
 											.activity-map__bar-content
 												img.activity-map__bar-img(src="../img/min-dark.svg")
+			//- end vertical block
+
+
+			//- horizontal
+			main.main(class="horizontal")
+				.main__content.main__content--activity(class="u-df-center")
+
+					.activity-map(class="u-df-center")
+
+
+						ul.activity-map__list(class="u-df-column-center") <!-- Неделя -->
+						
+
+							li.activity-map__list-item <!-- 1-ый день -->
+
+								ul.activity-map__item-list(class="u-df-center") <!-- Список часов первого дня -->
+
+									li.activity-map__bar.activity-map__bar--min <!-- 1-ый и 2-ой часы -->
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--extra
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/extra-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+							//- <!-- конец 1-го дня -->
+
+
+							li.activity-map__list-item <!-- 2-ой день -->
+
+								ul.activity-map__item-list(class="u-df-center") <!-- Список часов -->
+
+									li.activity-map__bar.activity-map__bar--min <!-- 1-ый и 2-ой часы -->
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--extra
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/extra-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+							//- <!-- конец 2-го дня -->
+
+
+							li.activity-map__list-item <!-- 3-ий день -->
+
+								ul.activity-map__item-list(class="u-df-center") <!-- Список часов -->
+
+									li.activity-map__bar.activity-map__bar--mid <!-- 1-ый и 2-ой часы -->
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--extra
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/extra-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--extra
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/extra-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+							//- <!-- конец 3-го дня -->
+
+
+							li.activity-map__list-item <!-- 4-ый день -->
+
+								ul.activity-map__item-list(class="u-df-center") <!-- Список часов дня -->
+
+									li.activity-map__bar.activity-map__bar--mid <!-- 1-ый и 2-ой часы -->
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--extra
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/extra-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--extra
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/extra-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+							//- <!-- конец 4-го дня -->
+
+
+							li.activity-map__list-item <!-- 5-ый день -->
+
+								ul.activity-map__item-list(class="u-df-center") <!-- Список часов дня -->
+
+									li.activity-map__bar.activity-map__bar--min <!-- 1-ый и 2-ой часы -->
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--extra
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/extra-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+							//- <!-- конец 5-го дня -->
+
+
+							li.activity-map__list-item <!-- 6-ой день -->
+
+								ul.activity-map__item-list(class="u-df-center") <!-- Список часов дня -->
+
+									li.activity-map__bar.activity-map__bar--min <!-- 1-ый и 2-ой часы -->
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+							//- <!-- конец 6-го дня -->
+
+
+							li.activity-map__list-item <!-- 7-ый день -->
+
+								ul.activity-map__item-list(class="u-df-center") <!-- Список часов дня -->
+
+									li.activity-map__bar.activity-map__bar--min <!-- 1-ый и 2-ой часы -->
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--max
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/max-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--mid
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/mid-dark.svg")
+
+									li.activity-map__bar.activity-map__bar--min
+										.activity-map__bar-container
+											.activity-map__bar-content
+												img.activity-map__bar-img(src="../img/min-dark.svg")
+
+							//- <!-- конец 7-го дня -->
 
 
 			footer.activity-footer
@@ -911,7 +1392,8 @@ html(lang="en")
 							.legend-list__designation-part-2
 							.legend-list__designation-part-3
 
-						p.legend-list__description 1 час
+						p.legend-list__description(class="vertical") 1 час
+						p.legend-list__description(class="horizontal") 2 часа
 
 					li.legend-list__item
 						.legend-list__designation.legend-list__designation--2
