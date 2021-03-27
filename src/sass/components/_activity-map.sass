@@ -32,13 +32,10 @@
 			&:nth-child(even)
 				// right: -4.166%
 				right: -2.083%
-
+		
 
 			// Смертельный номер
-			@for $i from 0 through 24
-
-				&:nth-child(#{ $i })
-					z-index: $i
+			@include setZIndex
 			//
 
 
@@ -56,14 +53,7 @@
 		
 
 		// Смертельный номер
-		@for $i from 0 through 24
-
-			&:nth-child(#{ $i })
-				z-index: $i
-
-
-				@media screen and (orientation: landscape)
-					z-index: unset
+		@include setZIndex
 		//
 
 

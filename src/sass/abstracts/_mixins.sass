@@ -1,0 +1,12 @@
+
+
+@mixin setZIndex
+	@for $i from 0 through 24
+
+		&:nth-child(#{ $i })
+			z-index: $i
+
+
+			@media screen and (orientation: landscape)
+				z-index: unset
+	
