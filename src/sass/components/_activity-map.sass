@@ -1,0 +1,50 @@
+
+
+.activity-map
+	
+
+	&__list
+		list-style-type: unset
+
+
+	&__list-item
+		display: inline-block
+
+
+	&__item-list
+		list-style-type: unset
+
+
+	&__bar
+		display: inline-block
+		position: relative
+
+		width: 43.73px
+		height: 17px
+		
+
+		// Смертельный номер
+		@for $i from 0 through 24
+
+			&:nth-child(#{ $i })
+				z-index: $i
+		//
+
+
+		&:nth-child(odd)
+			left: -25%
+
+
+		&:nth-child(even)
+			right: -25%
+
+
+	&__bar-img
+		object-fit: contain
+
+		position: absolute
+		bottom: 0
+
+		width: 43.73px
+
+
