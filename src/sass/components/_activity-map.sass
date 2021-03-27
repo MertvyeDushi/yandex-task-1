@@ -1,26 +1,31 @@
 
 
 .activity-map
+	max-width: 450px
+	width: 100%
 	
 
 	&__list
 		list-style-type: unset
+		width: 100%
 
 
 	&__list-item
 		display: inline-block
+		width: calc( 100% / 7 )
 
 
 	&__item-list
 		list-style-type: unset
+		width: 100%
 
 
 	&__bar
 		display: inline-block
 		position: relative
 
-		width: 43.73px
-		height: 17px
+		max-width: 100px
+		width: 100%
 		
 
 		// Смертельный номер
@@ -39,12 +44,27 @@
 			right: -25%
 
 
+		&-container
+			position: relative
+
+			height: 0
+			padding-top: 38.875%
+
+
+		&-content
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+
+
 	&__bar-img
 		object-fit: contain
 
 		position: absolute
 		bottom: 0
 
-		width: 43.73px
+		width: 100%
 
 

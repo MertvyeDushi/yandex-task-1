@@ -488,80 +488,92 @@ body {
     font-weight: bold;
     color: #918F8A; }
 
-.activity-map__list {
-  list-style-type: unset; }
-
-.activity-map__list-item {
-  display: inline-block; }
-
-.activity-map__item-list {
-  list-style-type: unset; }
-
-.activity-map__bar {
-  display: inline-block;
-  position: relative;
-  width: 43.73px;
-  height: 17px; }
-  .activity-map__bar:nth-child(0) {
-    z-index: 0; }
-  .activity-map__bar:nth-child(1) {
-    z-index: 1; }
-  .activity-map__bar:nth-child(2) {
-    z-index: 2; }
-  .activity-map__bar:nth-child(3) {
-    z-index: 3; }
-  .activity-map__bar:nth-child(4) {
-    z-index: 4; }
-  .activity-map__bar:nth-child(5) {
-    z-index: 5; }
-  .activity-map__bar:nth-child(6) {
-    z-index: 6; }
-  .activity-map__bar:nth-child(7) {
-    z-index: 7; }
-  .activity-map__bar:nth-child(8) {
-    z-index: 8; }
-  .activity-map__bar:nth-child(9) {
-    z-index: 9; }
-  .activity-map__bar:nth-child(10) {
-    z-index: 10; }
-  .activity-map__bar:nth-child(11) {
-    z-index: 11; }
-  .activity-map__bar:nth-child(12) {
-    z-index: 12; }
-  .activity-map__bar:nth-child(13) {
-    z-index: 13; }
-  .activity-map__bar:nth-child(14) {
-    z-index: 14; }
-  .activity-map__bar:nth-child(15) {
-    z-index: 15; }
-  .activity-map__bar:nth-child(16) {
-    z-index: 16; }
-  .activity-map__bar:nth-child(17) {
-    z-index: 17; }
-  .activity-map__bar:nth-child(18) {
-    z-index: 18; }
-  .activity-map__bar:nth-child(19) {
-    z-index: 19; }
-  .activity-map__bar:nth-child(20) {
-    z-index: 20; }
-  .activity-map__bar:nth-child(21) {
-    z-index: 21; }
-  .activity-map__bar:nth-child(22) {
-    z-index: 22; }
-  .activity-map__bar:nth-child(23) {
-    z-index: 23; }
-  .activity-map__bar:nth-child(24) {
-    z-index: 24; }
-  .activity-map__bar:nth-child(odd) {
-    left: -25%; }
-  .activity-map__bar:nth-child(even) {
-    right: -25%; }
-
-.activity-map__bar-img {
-  object-fit: contain;
-  position: absolute;
-  bottom: 0;
-  width: 43.73px; }
+.activity-map {
+  max-width: 450px;
+  width: 100%; }
+  .activity-map__list {
+    list-style-type: unset;
+    width: 100%; }
+  .activity-map__list-item {
+    display: inline-block;
+    width: calc( 100% / 7); }
+  .activity-map__item-list {
+    list-style-type: unset;
+    width: 100%; }
+  .activity-map__bar {
+    display: inline-block;
+    position: relative;
+    max-width: 100px;
+    width: 100%; }
+    .activity-map__bar:nth-child(0) {
+      z-index: 0; }
+    .activity-map__bar:nth-child(1) {
+      z-index: 1; }
+    .activity-map__bar:nth-child(2) {
+      z-index: 2; }
+    .activity-map__bar:nth-child(3) {
+      z-index: 3; }
+    .activity-map__bar:nth-child(4) {
+      z-index: 4; }
+    .activity-map__bar:nth-child(5) {
+      z-index: 5; }
+    .activity-map__bar:nth-child(6) {
+      z-index: 6; }
+    .activity-map__bar:nth-child(7) {
+      z-index: 7; }
+    .activity-map__bar:nth-child(8) {
+      z-index: 8; }
+    .activity-map__bar:nth-child(9) {
+      z-index: 9; }
+    .activity-map__bar:nth-child(10) {
+      z-index: 10; }
+    .activity-map__bar:nth-child(11) {
+      z-index: 11; }
+    .activity-map__bar:nth-child(12) {
+      z-index: 12; }
+    .activity-map__bar:nth-child(13) {
+      z-index: 13; }
+    .activity-map__bar:nth-child(14) {
+      z-index: 14; }
+    .activity-map__bar:nth-child(15) {
+      z-index: 15; }
+    .activity-map__bar:nth-child(16) {
+      z-index: 16; }
+    .activity-map__bar:nth-child(17) {
+      z-index: 17; }
+    .activity-map__bar:nth-child(18) {
+      z-index: 18; }
+    .activity-map__bar:nth-child(19) {
+      z-index: 19; }
+    .activity-map__bar:nth-child(20) {
+      z-index: 20; }
+    .activity-map__bar:nth-child(21) {
+      z-index: 21; }
+    .activity-map__bar:nth-child(22) {
+      z-index: 22; }
+    .activity-map__bar:nth-child(23) {
+      z-index: 23; }
+    .activity-map__bar:nth-child(24) {
+      z-index: 24; }
+    .activity-map__bar:nth-child(odd) {
+      left: -25%; }
+    .activity-map__bar:nth-child(even) {
+      right: -25%; }
+    .activity-map__bar-container {
+      position: relative;
+      height: 0;
+      padding-top: 38.875%; }
+    .activity-map__bar-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+  .activity-map__bar-img {
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
 
 .main {
   height: 100%;
@@ -583,4 +595,4 @@ body {
       padding: 9.8rem 0 0;
       margin-bottom: 2.4rem; }
     .main__content--activity {
-      padding: 6.672rem 2.4rem 0; }
+      padding: 6.644rem 3.54rem 0; }
