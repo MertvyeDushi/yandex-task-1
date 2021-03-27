@@ -49,6 +49,16 @@ body {
   display: inline-block;
   border: none; }
 
+@media screen and (orientation: landscape) {
+  .horizontal {
+    display: none !important; } }
+
+.vertical {
+  display: none !important; }
+  @media screen and (orientation: landscape) {
+    .vertical {
+      display: flex !important; } }
+
 body {
   font-family: 'Roboto';
   font-weight: 400;
@@ -338,6 +348,9 @@ body {
   @media screen and (min-width: 410px) {
     .list-vote {
       justify-content: space-evenly; } }
+  @media screen and (orientation: landscape) {
+    .list-vote {
+      justify-content: space-evenly; } }
   .list-vote__item {
     height: 100%; }
   .list-vote__person-container {
@@ -622,6 +635,9 @@ body {
           padding-top: 4.8rem; } }
     .main__content--vote {
       padding: 0 2.4rem; }
+      @media screen and (orientation: landscape) {
+        .main__content--vote {
+          padding: .5rem .1rem; } }
     .main__content--vote-results {
       padding: 3.7rem 2.8rem 0; }
     .main__content--chart {

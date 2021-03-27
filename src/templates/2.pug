@@ -23,7 +23,9 @@ html(lang="en")
 
 					ul.list-vote(class="u-df-center-between")
 
-						li.list-vote__item(class="u-df-column-evenly")
+
+						//- horizontal
+						li.list-vote__item(class="u-df-column-evenly horizontal")
 
 							.list-vote__person-container(class="u-df-center")
 								.list-vote__person.person
@@ -39,13 +41,23 @@ html(lang="en")
 								.list-vote__person.person
 									img.person__avatar(src="../img/5.jpg" onerror="../img/no_avatar.png" alt="Александр Николаичев")
 									p.person__name Александр Николаичев
+						//- end horizontal block
 
 
-						li.list-vote__item(class="u-df-column-evenly")
+						//- vertical
+						li.list-vote__item(class="u-df-center vertical")
 
-							button.list-vote__btn.list-vote__btn--up.list-vote__btn--disabled(class="btn")
+							.list-vote__person-container(class="u-df-center")
+								.list-vote__person.person
+									img.person__avatar(src="../img/1.jpg" onerror="../img/no_avatar.png" alt="Евгений Дементьев")
+									p.person__name Евгений Дементьев
+						//- end vertical block
 
-							.list-vote__central-container.list-vote__central-container--voted(class="u-df-center")
+
+						//- vertical
+						li.list-vote__item(class="u-df-column-between vertical")
+
+							.list-vote__central-container.list-vote__central-container--voted(class="u-df-center-between")
 
 								p.list-vote__emoji 👍
 								.person
@@ -53,14 +65,41 @@ html(lang="en")
 									p.person__name Вадим Пацев
 
 							.list-vote__central-container.list-vote__central-container--hovered(class="u-df-center")
+
 								.person
 									img.person__avatar(src="../img/11.jpg" onerror="../img/no_avatar.png" alt="Юрий Фролов")
 									p.person__name Юрий Фролов
+						//- end vertical block
+
+
+						li.list-vote__item(class="u-df-column-evenly")
+
+							button.list-vote__btn.list-vote__btn--up.list-vote__btn--disabled(class="btn")
+
+
+							//- horizontal
+							.list-vote__central-container.list-vote__central-container--voted(class="u-df-center horizontal")
+
+								p.list-vote__emoji 👍
+								.person
+									img.person__avatar(src="../img/4.jpg" onerror="../img/no_avatar.png" alt="Вадим Пацев")
+									p.person__name Вадим Пацев
+							//- end horizontal block
+
+
+							//- horizontal
+							.list-vote__central-container.list-vote__central-container--hovered(class="u-df-center horizontal")
+								.person
+									img.person__avatar(src="../img/11.jpg" onerror="../img/no_avatar.png" alt="Юрий Фролов")
+									p.person__name Юрий Фролов
+							//- end horizontal block
+
 
 							button.list-vote__btn.list-vote__btn--down(class="btn")
 
 
-						li.list-vote__item(class="u-df-column-evenly")
+						//- horizontal
+						li.list-vote__item(class="u-df-column-evenly horizontal")
 
 							.list-vote__person-container(class="u-df-center")
 								.list-vote__person.person
@@ -76,3 +115,29 @@ html(lang="en")
 								.list-vote__person.person
 									img.person__avatar(src="../img/6.jpg" onerror="../img/no_avatar.png" alt="Андрей Мокроусов")
 									p.person__name Андрей Мокроусов
+						//- end horizontal block
+
+
+						//- vertical
+						li.list-vote__item(class="u-df-column-between vertical")
+
+							.list-vote__person-container(class="u-df-center")
+								.list-vote__person.person
+									img.person__avatar(src="../img/10.jpg" onerror="../img/no_avatar.png" alt="Яна Берникова")
+									p.person__name Яна Берникова
+
+							.list-vote__person-container(class="u-df-center")
+								.list-vote__person.person
+									img.person__avatar(src="../img/2.jpg" onerror="../img/no_avatar.png" alt="Александр Шлейко")
+									p.person__name Александр Шлейко
+						//- end vertical block
+
+
+						//- vertical
+						li.list-vote__item(class="u-df-center vertical")
+
+							.list-vote__person-container(class="u-df-center")
+								.list-vote__person.person
+									img.person__avatar(src="../img/12.jpg" onerror="../img/no_avatar.png" alt="Алексей Ярошевич")
+									p.person__name Алексей Ярошевич
+						//- end vertical block
