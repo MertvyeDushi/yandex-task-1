@@ -157,11 +157,30 @@ body {
 .chart-footer {
   padding: 0 2.4rem 2.4rem;
   width: 100%; }
+  @media screen and (orientation: landscape) {
+    .chart-footer__list {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media screen and (orientation: landscape) {
+    .chart-footer__item {
+      min-width: 22rem;
+      box-sizing: content-box; } }
   .chart-footer__item:first-child {
     padding-bottom: 1.6rem;
     border-bottom: 0.2rem solid rgba(191, 191, 191, 0.3); }
+    @media screen and (orientation: landscape) {
+      .chart-footer__item:first-child {
+        padding-bottom: unset;
+        border-bottom: unset;
+        padding-right: 1.6rem;
+        border-right: 0.2rem solid rgba(191, 191, 191, 0.3); } }
   .chart-footer__item:last-child {
     padding-top: 1.6rem; }
+    @media screen and (orientation: landscape) {
+      .chart-footer__item:last-child {
+        padding-top: unset;
+        padding-left: 1.6rem; } }
   .chart-footer__avatar {
     height: 4rem;
     width: 4rem;
@@ -392,10 +411,17 @@ body {
   list-style-type: unset;
   height: 100%;
   max-height: 33rem; }
+  @media screen and (orientation: landscape) {
+    .chart-list {
+      justify-content: space-between;
+      max-height: 17.7rem; } }
   .chart-list__item {
     max-height: 100%; }
     .chart-list__item:not(:last-child) {
       margin-right: 6.385%; }
+      @media screen and (orientation: landscape) {
+        .chart-list__item:not(:last-child) {
+          margin-right: 4.487%; } }
   .chart-list__value {
     margin-bottom: .8rem;
     font-style: normal;
@@ -413,15 +439,42 @@ body {
     border-radius: .6rem; }
     .chart-list__rectangle--1 {
       height: 24.3rem; }
+      @media screen and (orientation: landscape) {
+        .chart-list__rectangle--1 {
+          height: 7.2rem; } }
     .chart-list__rectangle--2 {
       height: 17.5rem; }
+      @media screen and (orientation: landscape) {
+        .chart-list__rectangle--2 {
+          height: 9.8rem; } }
     .chart-list__rectangle--3 {
       height: 20.7rem; }
+      @media screen and (orientation: landscape) {
+        .chart-list__rectangle--3 {
+          height: 8.2rem; } }
     .chart-list__rectangle--4 {
-      height: 27rem; }
+      height: 24.3rem; }
+      @media screen and (orientation: landscape) {
+        .chart-list__rectangle--4 {
+          height: 10.5rem; } }
     .chart-list__rectangle--5 {
-      height: .8rem; }
+      height: 17.5rem; }
+      @media screen and (orientation: landscape) {
+        .chart-list__rectangle--5 {
+          height: 7.6rem; } }
     .chart-list__rectangle--6 {
+      height: 20.7rem; }
+      @media screen and (orientation: landscape) {
+        .chart-list__rectangle--6 {
+          height: 9rem; } }
+    .chart-list__rectangle--7 {
+      height: 27rem; }
+      @media screen and (orientation: landscape) {
+        .chart-list__rectangle--7 {
+          height: 11.7rem; } }
+    .chart-list__rectangle--8 {
+      height: .8rem; }
+    .chart-list__rectangle--9 {
       height: .8rem; }
     .chart-list__rectangle--secondary {
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
@@ -645,5 +698,9 @@ body {
       right: 1.6rem;
       padding: 9.8rem 0 0;
       margin-bottom: 2.4rem; }
+      @media screen and (orientation: landscape) {
+        .main__content--chart {
+          right: unset;
+          padding: 3.3rem 5.8rem 0; } }
     .main__content--activity {
       padding: 6.644rem 3.54rem 0; }

@@ -5,13 +5,43 @@
 	width: 100%
 
 
+	&__list
+
+
+		@media screen and (orientation: landscape)
+			display: flex
+			justify-content: center
+			align-items: center
+
+
+	&__item
+
+
+		@media screen and (orientation: landscape)
+			min-width: 22rem
+			box-sizing: content-box
+
+
 	&__item:first-child
 		padding-bottom: 1.6rem
 		border-bottom: .2rem solid rgba($color_footer_separatop, .3)
 
 
+		@media screen and (orientation: landscape)
+			padding-bottom: unset
+			border-bottom: unset
+
+			padding-right: 1.6rem
+			border-right: .2rem solid rgba($color_footer_separatop, .3)
+
+
 	&__item:last-child
 		padding-top: 1.6rem
+
+
+		@media screen and (orientation: landscape)
+			padding-top: unset
+			padding-left: 1.6rem
 
 
 	&__avatar
