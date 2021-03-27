@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"compile:sass": "node-sass src/sass/main.sass build/css/stories.css --watch",
-		"compile:pug": "pug --pretty -w src/templates/4.pug --out build/templates/",
+		"compile:pug": "pug --pretty -w src/templates/5.pug --out build/templates/",
 		"live-server": "live-server",
 		"serve": "npm-run-all --parallel compile:sass compile:pug live-server",
 		"start": "node server.js"
