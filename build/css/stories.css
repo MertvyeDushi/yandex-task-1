@@ -37,8 +37,7 @@ body {
   min-width: 100%;
   min-height: 100vh; }
   .container.theme_dark {
-    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000 100%);
-    border-radius: 6px; }
+    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000 100%); }
 
 .separator {
   width: 6rem;
@@ -569,12 +568,22 @@ body {
 .diagram {
   width: 32.8rem;
   height: 32.8rem;
-  position: relative;
-  border: 1px solid #eee; }
+  position: relative; }
   @media screen and (orientation: landscape) {
     .diagram {
       width: 24rem;
       height: 24rem; } }
+  .diagram__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 328px;
+    height: 328px; }
+    @media screen and (orientation: landscape) {
+      .diagram__svg {
+        width: 240px;
+        height: 240px; } }
   .diagram__unit {
     position: absolute; }
     .diagram__unit--1 {
@@ -592,18 +601,24 @@ body {
       top: 4%; }
   .diagram__content {
     max-width: 16.4rem;
-    text-align: center; }
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     @media screen and (orientation: landscape) {
       .diagram__content {
         max-width: 12rem; } }
   .diagram__number {
     font-size: 3rem;
     line-height: 3.2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: .8rem; }
     @media screen and (orientation: landscape) {
       .diagram__number {
         font-size: 2rem;
-        line-height: 2.2rem; } }
+        line-height: 2.2rem;
+        margin-bottom: .6rem; } }
   .diagram__plus {
     font-size: 2rem;
     line-height: 2.2rem;
