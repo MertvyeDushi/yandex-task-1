@@ -35,9 +35,8 @@ body {
 
 .container {
   min-width: 100%;
-  min-height: 100vh; }
-  .container.theme_dark {
-    background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000 100%); }
+  min-height: 100vh;
+  background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000 100%); }
 
 .separator {
   width: 6rem;
@@ -58,12 +57,17 @@ body {
     .horizontal {
       display: flex !important; } }
 
+.light {
+  display: none; }
+
 body {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 1.6rem;
   font-style: normal;
-  line-height: 1.8rem;
+  line-height: 1.8rem; }
+
+.container {
   color: #FCFBF7; }
 
 .title {
@@ -143,6 +147,122 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column; }
+
+.theme_light.container {
+  background: #fff;
+  color: #261C00; }
+
+.theme_light .description-text {
+  color: #BFBFBF; }
+
+.theme_light .person__avatar {
+  filter: unset; }
+
+.theme_light .list-leaders__item--primary .list-rectangle {
+  background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.8); }
+
+.theme_light .list-leaders__item--secondary .list-rectangle {
+  background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(207, 207, 207, 0.5); }
+
+.theme_light .list-vote__central-container--voted {
+  background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.8); }
+
+.theme_light .list-vote__central-container--hovered {
+  background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(207, 207, 207, 0.5); }
+
+.theme_light .list-vote__btn {
+  background: #F4B000; }
+
+.theme_light .list-vote__btn--disabled {
+  background: #BFBFBF; }
+
+.theme_light .list-person--float .list-person__value {
+  color: #261C00; }
+
+.theme_light .separator {
+  background: #261C00; }
+
+.theme_light .chart-list__rectangle--primary {
+  background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.8); }
+
+.theme_light .chart-list__number {
+  color: #BFBFBF; }
+
+.theme_light .chart-footer__value {
+  color: #BFBFBF; }
+
+.theme_light .chart-list__value {
+  color: #BFBFBF; }
+
+.theme_light .chart-list__value--primary {
+  color: #261C00; }
+
+.theme_light .chart-footer__avatar {
+  filter: unset; }
+
+.theme_light .diagram__plus {
+  color: #BFBFBF; }
+
+.theme_light .diagram-footer__prev, .theme_light .diagram-footer__current {
+  color: #BFBFBF; }
+
+.theme_light .diagram-footer__dot--1 {
+  background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.9); }
+
+.theme_light .diagram-footer__dot--2 {
+  background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.4); }
+
+.theme_light .diagram-footer__dot--3 {
+  background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(105, 105, 105, 0.2); }
+
+.theme_light .diagram-footer__dot--4 {
+  background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(131, 131, 131, 0.6); }
+
+.theme_light .dark {
+  display: none; }
+
+.theme_light .light {
+  display: inline-block; }
+
+.theme_light .legend-list__description {
+  color: #BFBFBF; }
+
+.theme_light .legend-list__designation-part-1 {
+  background: radial-gradient(2408.25% 2730.55% at 89.06% 78.28%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  box-shadow: inset -0.1rem 0 0.2rem rgba(255, 255, 255, 0.2), inset 0.1rem 0.1rem 1.6rem rgba(103, 103, 103, 0.2); }
+
+.theme_light .legend-list__designation-part-2 {
+  background: radial-gradient(2408.25% 2730.55% at 89.06% 78.28%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  box-shadow: inset -0.1rem 0 0.2rem rgba(255, 255, 255, 0.2), inset 0.1rem 0.1rem 1.6rem rgba(103, 103, 103, 0.2); }
+
+.theme_light .legend-list__designation-part-3 {
+  background: radial-gradient(2408.25% 2730.55% at 89.06% 78.28%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%);
+  box-shadow: inset -0.1rem 0 0.2rem rgba(255, 255, 255, 0.2), inset 0.1rem 0.1rem 1.6rem rgba(103, 103, 103, 0.2); }
+
+.theme_light .legend-list__designation--2 {
+  background: radial-gradient(2408.25% 2730.55% at 89.06% 78.28%, rgba(250, 250, 250, 0.6) 0%, rgba(250, 250, 250, 0.6) 100%);
+  box-shadow: inset -0.1rem 0 0.2rem rgba(250, 250, 250, 0.2), inset 0.1rem 0.1rem 1.6rem rgba(106, 106, 106, 0.2); }
+
+.theme_light .legend-list__designation--3 {
+  background: radial-gradient(2408.25% 2730.55% at 89.06% 78.28%, rgba(250, 250, 250, 0.8) 0%, rgba(250, 250, 250, 0.8) 100%);
+  box-shadow: inset -0.1rem 0 0.2rem rgba(250, 250, 250, 0.2), inset 0.1rem 0.1rem 1.6rem rgba(106, 106, 106, 0.3); }
+
+.theme_light .legend-list__designation--4 {
+  background: radial-gradient(68.1% 68.1% at 4.41% 31.9%, #FFF6DD 8.72%, #FFFEFA 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.4); }
+
+.theme_light .legend-list__designation--5 {
+  background: radial-gradient(66.02% 86.49% at -16.18% 13.51%, rgba(255, 186, 6, 0.85) 0%, #FFF2AD 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.4); }
 
 .header {
   padding: 2rem 2.4rem 0;

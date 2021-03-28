@@ -33,9 +33,7 @@ body
 	min-width: 100%
 	min-height: 100vh
 
-
-	&.theme_dark
-		background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, .9) 0%, #000 100%)
+	background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba($color_bg_dark--1, .9) 0%, $color_bg_dark--2 100%)
 
 
 .separator
@@ -68,4 +66,8 @@ body
 
 	@media screen and (orientation: landscape)
 		display: flex !important
+
+
+.light
+	display: none
 
