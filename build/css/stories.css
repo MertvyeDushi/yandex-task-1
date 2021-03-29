@@ -556,12 +556,10 @@ body {
       justify-content: space-between;
       max-height: 17.7rem; } }
   .chart-list__item {
-    max-height: 100%; }
+    max-height: 100%;
+    flex: 1 0 0; }
     .chart-list__item:not(:last-child) {
-      margin-right: 6.385%; }
-      @media screen and (orientation: landscape) {
-        .chart-list__item:not(:last-child) {
-          margin-right: 4.487%; } }
+      margin-right: 1.785%; }
   .chart-list__value {
     margin-bottom: .8rem;
     font-style: normal;

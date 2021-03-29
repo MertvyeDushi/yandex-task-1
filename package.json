@@ -2,7 +2,7 @@
 	"name": "yandex_stories",
 	"version": "1.0.0",
 	"description": "Yandex Stories | 1st task | Good luck boyz",
-	"main": "index.js",
+	"main": "stories.js",
 	"scripts": {
 		"compile:sass": "node-sass src/sass/main.sass build/css/stories.css --watch",
 		"compile:pug": "pug --pretty -w src/templates/2.pug --out build/templates/",
