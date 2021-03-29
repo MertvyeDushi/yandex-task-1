@@ -535,8 +535,8 @@ body {
     cursor: pointer;
     transition: all .2s;
     background: #FCFBF7;
-    -webkit-mask: url(../img/button-dark.svg) no-repeat center/contain;
-    mask: url(../img/button-dark.svg) no-repeat center/contain; }
+    -webkit-mask: url(./img/button-dark.svg) no-repeat center/contain;
+    mask: url(./img/button-dark.svg) no-repeat center/contain; }
     .list-vote__btn[disabled="true"], .list-vote__btn:hover, .list-vote__btn:active {
       background: #918F8A; }
     .list-vote__btn--up {

@@ -23,7 +23,7 @@ function returnLeaders(data) {
 							<div class="list-rectangle list-rectangle--0">
 								<div class="list-person list-person--0">
 									<p class="list-person__emoji">${ innerData.users[4].id === innerData.selectedUserId ? '👍' : '' }</p>
-									<div class="person"><img class="person__avatar" src="../img/${ innerData.users[4].avatar }" alt="${ innerData.users[4].name }">
+									<div class="person"><img class="person__avatar" src="./img/${ innerData.users[4].avatar }" alt="${ innerData.users[4].name }">
 										<p class="person__name">${ innerData.users[4].name }</p>
 									</div>
 									<p class="list-person__value">${ innerData.users[4].valueText }</p>
@@ -35,7 +35,7 @@ function returnLeaders(data) {
 							<div class="list-rectangle list-rectangle--1">
 								<div class="list-person list-person--1">									
 									<p class="list-person__emoji">${ innerData.users[2].id === innerData.selectedUserId ? '👍' : '' }</p>
-									<div class="person"><img class="person__avatar" src="../img/${ innerData.users[2].avatar }" alt="${ innerData.users[2].name }">
+									<div class="person"><img class="person__avatar" src="./img/${ innerData.users[2].avatar }" alt="${ innerData.users[2].name }">
 										<p class="person__name">${ innerData.users[2].name }</p>
 									</div>
 									<p class="list-person__value">${ innerData.users[2].valueText }</p>
@@ -48,7 +48,7 @@ function returnLeaders(data) {
 
 							<div class="list-person">
 								<p class="list-person__emoji">${ innerData.emoji }</p>
-								<div class="person"><img class="person__avatar" src="../img/${ innerData.users[0].avatar }" alt="${ innerData.users[0].name }">
+								<div class="person"><img class="person__avatar" src="./img/${ innerData.users[0].avatar }" alt="${ innerData.users[0].name }">
 									<p class="person__name">${ innerData.users[0].name }</p>
 								</div>
 								<p class="list-person__value">${ innerData.users[0].valueText }</p>
@@ -60,7 +60,7 @@ function returnLeaders(data) {
 
 							<div class="list-person list-person--float vertical" style="${ innerData.selectedUserId ? ( innerData.users[4].id === innerData.selectedUserId ? '' : 'opacity: 0; visibility: hidden' ) : 'opacity: 0; visibility: hidden' }">
 								<p class="list-person__emoji">${ innerData.users[4].id === innerData.selectedUserId ? '👍' : '' }</p>
-								<div class="person"><img class="person__avatar" src="../img/${ innerData.users[4].avatar }" alt="${ innerData.users[4].name }">
+								<div class="person"><img class="person__avatar" src="./img/${ innerData.users[4].avatar }" alt="${ innerData.users[4].name }">
 									<p class="person__name">${ innerData.users[4].name }</p>
 								</div>
 								<p class="list-person__value">15 голосов</p>
@@ -74,7 +74,7 @@ function returnLeaders(data) {
 							<div class="list-rectangle list-rectangle--3">
 								<div class="list-person list-person--3">
 									<p class="list-person__emoji">${ innerData.users[1].id === innerData.selectedUserId ? '👍' : '' }</p>
-									<div class="person"><img class="person__avatar" src="../img/${ innerData.users[1].avatar }" alt="${ innerData.users[1].name }">
+									<div class="person"><img class="person__avatar" src="./img/${ innerData.users[1].avatar }" alt="${ innerData.users[1].name }">
 										<p class="person__name">${ innerData.users[1].name }</p>
 									</div>
 									<p class="list-person__value">${ innerData.users[1].valueText }</p>
@@ -86,7 +86,7 @@ function returnLeaders(data) {
 							<div class="list-rectangle list-rectangle--4">
 								<div class="list-person list-person--4">
 									<p class="list-person__emoji">${ innerData.users[1].id === innerData.selectedUserId ? '👍' : '' }</p>
-									<div class="person"><img class="person__avatar" src="../img/${ innerData.users[3].avatar }" alt="${ innerData.users[3].name }">
+									<div class="person"><img class="person__avatar" src="./img/${ innerData.users[3].avatar }" alt="${ innerData.users[3].name }">
 										<p class="person__name">${ innerData.users[3].name }</p>
 									</div>
 									<p class="list-person__value">${ innerData.users[3].valueText }</p>
@@ -120,19 +120,19 @@ function returnVote(data) {
 						<li class="list-vote__item u-df-column-evenly vertical">
 							<div class="list-vote__person-container ${ data.users[0] && data.users[0].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[0] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[0] && data.users[0].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[0] ? data.users[0].avatar : '' }" alt="${ data.users[0] ? data.users[0].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[0] ? data.users[0].avatar : '' }" alt="${ data.users[0] ? data.users[0].name : '' }">
 									<p class="person__name">${ data.users[0] ? data.users[0].name : '' }</p>
 								</div>
 							</div>
 							<div class="list-vote__person-container ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[3] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[3] && data.users[3].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
 									<p class="person__name">${ data.users[3] ? data.users[3].name : '' }</p>
 								</div>
 							</div>
 							<div class="list-vote__person-container ${ data.users[6] && data.users[6].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[6] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[6] && data.users[6].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[6] ? data.users[6].avatar : '' }" alt="${ data.users[6] ? data.users[6].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[6] ? data.users[6].avatar : '' }" alt="${ data.users[6] ? data.users[6].name : '' }">
 									<p class="person__name">${ data.users[6] ? data.users[6].name : '' }</p>
 								</div>
 							</div>
@@ -140,7 +140,7 @@ function returnVote(data) {
 						<li class="list-vote__item u-df-center horizontal">
 							<div class="list-vote__person-container ${ data.users[0] && data.users[0].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[0] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[0] && data.users[0].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[0] ? data.users[0].avatar : '' }" alt="${ data.users[0] ? data.users[0].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[0] ? data.users[0].avatar : '' }" alt="${ data.users[0] ? data.users[0].name : '' }">
 									<p class="person__name">${ data.users[0] ? data.users[0].name : '' }</p>
 								</div>
 							</div>
@@ -148,13 +148,13 @@ function returnVote(data) {
 						<li class="list-vote__item u-df-column-between horizontal">
 							<div class="list-vote__central-container ${ data.users[1] && data.users[1].id === data.selectedUserId ? 'voted' : '' } list-vote__central-container ${ data.users[1] && data.users[1].id === data.selectedUserId ? 'voted' : '' } u-df-center-between" style="${ data.users[1] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[1] && data.users[1].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="person"><img class="person__avatar" src="../img/${ data.users[1] ? data.users[1].avatar : '' }" alt="${ data.users[1] ? data.users[1].name : '' }">
+								<div class="person"><img class="person__avatar" src="./img/${ data.users[1] ? data.users[1].avatar : '' }" alt="${ data.users[1] ? data.users[1].name : '' }">
 									<p class="person__name">${ data.users[1] ? data.users[1].name : '' }</p>
 								</div>
 							</div>
 							<div class="list-vote__central-container ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[3] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[3] && data.users[3].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="person"><img class="person__avatar" src="../img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
+								<div class="person"><img class="person__avatar" src="./img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
 									<p class="person__name">${ data.users[3] ? data.users[3].name : '' }</p>
 								</div>
 							</div>
@@ -163,13 +163,13 @@ function returnVote(data) {
 							<button class="list-vote__btn list-vote__btn--up btn" disabled="${ data.offset ? false : true }"></button>
 							<div class="list-vote__central-container list-vote__central-container ${ data.users[1] && data.users[1].id === data.selectedUserId ? 'voted' : '' } u-df-center vertical" style="${ data.users[1] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[1] && data.users[1].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="person"><img class="person__avatar" src="../img/${ data.users[1] ? data.users[1].avatar : '' }" alt="${ data.users[1] ? data.users[1].name : '' }">
+								<div class="person"><img class="person__avatar" src="./img/${ data.users[1] ? data.users[1].avatar : '' }" alt="${ data.users[1] ? data.users[1].name : '' }">
 									<p class="person__name">${ data.users[1] ? data.users[1].name : '' }</p>
 								</div>
 							</div>
 							<div class="list-vote__central-container ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } u-df-center vertical" style="${ data.users[4] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[4] && data.users[4].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="person"><img class="person__avatar" src="../img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
+								<div class="person"><img class="person__avatar" src="./img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
 									<p class="person__name">${ data.users[4] ? data.users[4].name : '' }</p>
 								</div>
 							</div>
@@ -178,19 +178,19 @@ function returnVote(data) {
 						<li class="list-vote__item u-df-column-evenly vertical">
 							<div class="list-vote__person-container ${ data.users[2] === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[2] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[2] && data.users[2].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[2] ? data.users[2].avatar : '' }" alt="${ data.users[2] ? data.users[2].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[2] ? data.users[2].avatar : '' }" alt="${ data.users[2] ? data.users[2].name : '' }">
 									<p class="person__name">${ data.users[2] ? data.users[2].name : '' }</p>
 								</div>
 							</div>
 							<div class="list-vote__person-container ${ data.users[5] && data.users[5].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[5] ? '' : 'opacity: 0; visibility: hidden' }"
 								<p class="list-vote__emoji">${ data.users[5] && data.users[5].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[5] ? data.users[5].avatar : '' }" alt="${ data.users[5] ? data.users[5].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[5] ? data.users[5].avatar : '' }" alt="${ data.users[5] ? data.users[5].name : '' }">
 									<p class="person__name">${ data.users[5] ? data.users[5].name : '' }</p>
 								</div>
 							</div>
 							<div class="list-vote__person-container ${ data.users[7] && data.users[7].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[7] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[7] && data.users[7].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[7] ? data.users[7].avatar : '' }" alt="${ data.users[7] ? data.users[7].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[7] ? data.users[7].avatar : '' }" alt="${ data.users[7] ? data.users[7].name : '' }">
 									<p class="person__name">${ data.users[7] ? data.users[7].name : '' }</p>
 								</div>
 							</div>
@@ -198,13 +198,13 @@ function returnVote(data) {
 						<li class="list-vote__item u-df-column-between horizontal">
 							<div class="list-vote__person-container ${ data.users[2] && data.users[2].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[2] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[2] && data.users[2].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[2] ? data.users[2].avatar : '' }" alt="${ data.users[2] ? data.users[2].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[2] ? data.users[2].avatar : '' }" alt="${ data.users[2] ? data.users[2].name : '' }">
 									<p class="person__name">${ data.users[2] ? data.users[2].name : '' }</p>
 								</div>
 							</div>
 							<div class="list-vote__person-container ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[4] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[4] && data.users[4].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
 									<p class="person__name">${ data.users[4] ? data.users[4].name : '' }</p>
 								</div>
 							</div>
@@ -212,7 +212,7 @@ function returnVote(data) {
 						<li class="list-vote__item u-df-center horizontal" style="${ data.users[5] ? '' : 'opacity: 0; visibility: hidden' }">
 							<div class="list-vote__person-container ${ data.users[5] && data.users[5].id === data.selectedUserId ? 'voted' : '' } u-df-center">
 								<p class="list-vote__emoji">${ data.users[5] && data.users[5].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[5] ? data.users[5].avatar : '' }" alt="${ data.users[5] ? data.users[5].name : '' }">
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[5] ? data.users[5].avatar : '' }" alt="${ data.users[5] ? data.users[5].name : '' }">
 									<p class="person__name">${ data.users[5] ? data.users[5].name : '' }</p>
 								</div>
 							</div>
@@ -285,13 +285,13 @@ function returnChart(data) {
 			</main>
 			<footer class="chart-footer">
 				<ul class="chart-footer__list">
-					<li class="chart-footer__item u-df-center-start"><img class="chart-footer__avatar" src="../img/${ data.users[0].avatar }" alt="${ data.users[0].name }">
+					<li class="chart-footer__item u-df-center-start"><img class="chart-footer__avatar" src="./img/${ data.users[0].avatar }" alt="${ data.users[0].name }">
 						<div class="chart-footer__data">
 							<p class="chart-footer__name">${ data.users[0].name }</p>
 							<p class="chart-footer__value">${ data.users[0].valueText }</p>
 						</div>
 					</li>
-					<li class="chart-footer__item u-df-center-start"><img class="chart-footer__avatar" src="../img/${ data.users[1].avatar }" alt="${ data.users[1].name }">
+					<li class="chart-footer__item u-df-center-start"><img class="chart-footer__avatar" src="./img/${ data.users[1].avatar }" alt="${ data.users[1].name }">
 						<div class="chart-footer__data">
 							<p class="chart-footer__name">${ data.users[1].name }</p>
 							<p class="chart-footer__value">${ data.users[1].valueText }</p>
@@ -674,8 +674,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -687,8 +687,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -700,8 +700,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -713,8 +713,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -726,8 +726,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -739,8 +739,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -752,8 +752,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -823,8 +823,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -836,8 +836,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -849,8 +849,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -862,8 +862,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -875,8 +875,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -888,8 +888,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>
@@ -901,8 +901,8 @@ function returnActivity(data) {
 			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
 				<div class="activity-map__bar-container">
 					<div class="activity-map__bar-content">
-						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
-						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+						<img class="activity-map__bar-img dark" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="./img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
 					</div>
 				</div>
 			</li>

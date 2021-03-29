@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stories.css">
+    <title>Yandex Stories | 1st task</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="stories.js"></script>
+    <script>
+      fetch('data.json')
+        .then( response => response.json() )
+        .then( response => {
+          let data = response
+          const queryParams = window.location.search.substring(1)
+          const searchParams = new URLSearchParams(queryParams)
+          const slide = searchParams.get('slide') ? searchParams.get('slide') : 1
+          const theme = searchParams.get('theme')
+          const themeClassName = theme ? (theme === 'light' ? 'theme_light' : 'theme_dark') : ''
+          const body = document.querySelector('body')
+          if (themeClassName) body.classList.add(themeClassName)
+          body.innerHTML = window.renderTemplate(data[slide - 1].alias, data[slide - 1].data)
+        })
+    </script>
+  </body>
+</html>
