@@ -186,6 +186,10 @@ body {
 .theme_light .separator {
   background: #261C00; }
 
+.theme_light .chart-list__rectangle--secondary {
+  background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+  box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(207, 207, 207, 0.5); }
+
 .theme_light .chart-list__rectangle--primary {
   background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
   box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(255, 176, 57, 0.8); }
@@ -340,7 +344,8 @@ body {
       box-shadow: 0 0 2rem -0.8rem rgba(147, 93, 0, 0.2), inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5), inset 0 0 2rem rgba(202, 129, 0, 0.9); }
     .diagram-footer__dot--3 {
       background: radial-gradient(100% 100% at 50% 0%, rgba(151, 151, 151, 0.5) 0%, rgba(41, 41, 41, 0.5) 100%);
-      box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5); }
+      box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
+      transform: matrix(1, 0, 0, -1, 0, 0); }
     .diagram-footer__dot--4 {
       background: radial-gradient(100% 100% at 50% 0%, rgba(62, 62, 62, 0.5) 0%, rgba(40, 40, 40, 0.5) 100%);
       box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5); }
@@ -407,19 +412,22 @@ body {
   width: 100%;
   position: relative; }
   .list-rectangle--0, .list-rectangle--4 {
-    height: 27.2%; }
+    height: 26.07%; }
   .list-rectangle--1 {
-    height: 46.015%; }
+    height: 43.20%; }
     @media screen and (orientation: landscape) {
       .list-rectangle--1 {
-        height: 35.2%; } }
+        height: 33.742%; } }
   .list-rectangle--2 {
-    height: 66.465%; }
+    height: 62.385%; }
+    @media screen and (orientation: landscape) {
+      .list-rectangle--2 {
+        height: 41.39%; } }
   .list-rectangle--3 {
-    height: 56.239%; }
+    height: 52.787%; }
     @media screen and (orientation: landscape) {
       .list-rectangle--3 {
-        height: 35.2%; } }
+        height: 33.742%; } }
   .list-rectangle__rating {
     font-size: 3rem;
     font-weight: bold;
@@ -467,7 +475,7 @@ body {
           display: flex;
           right: calc( -2.581% * 2); } }
     .list-leaders__item--1 {
-      right: -4.879%;
+      right: -3.879%;
       z-index: 1; }
       @media screen and (orientation: landscape) {
         .list-leaders__item--1 {
@@ -475,7 +483,7 @@ body {
     .list-leaders__item--2 {
       z-index: 2; }
     .list-leaders__item--3 {
-      left: -4.879%;
+      left: -3.879%;
       z-index: 1; }
       @media screen and (orientation: landscape) {
         .list-leaders__item--3 {
@@ -527,7 +535,7 @@ body {
     letter-spacing: .39px;
     color: #FCFBF7;
     position: absolute;
-    top: -.8rem;
+    top: -.4rem;
     z-index: 1; }
   .list-vote__btn {
     width: 6.4rem;
@@ -559,7 +567,7 @@ body {
     max-height: 100%;
     flex: 1 0 0; }
     .chart-list__item:not(:last-child) {
-      margin-right: 1.785%; }
+      margin-right: 1.585%; }
   .chart-list__value {
     margin-bottom: .8rem;
     font-style: normal;
@@ -618,8 +626,8 @@ body {
       background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
       box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.2), inset 0.2rem 0.2rem 1.6rem rgba(103, 103, 103, 0.6); }
     .chart-list__rectangle--primary {
-      background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%);
-      box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.4), inset 0 0.6rem 1.5rem rgba(255, 162, 0, 0.4); }
+      background: radial-gradient(81.14% 100% at 50% 0%, #FFA300 0%, #2D1C00 100%);
+      box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.4), inset 0 0.6rem 1.5rem rgba(255, 162, 0, 0.5); }
   .chart-list__number {
     font-weight: 500;
     margin-top: 1.2rem;
@@ -684,9 +692,11 @@ body {
     width: 6.4rem;
     filter: grayscale(100%);
     border-radius: 50%;
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: .6rem; }
   .person__name {
     display: inline-block;
+    font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 3.6rem; }
@@ -1093,11 +1103,6 @@ body {
   width: 100%;
   flex-grow: 1;
   display: flex; }
-  .main--vote {
-    max-height: 50.3rem; }
-    @media screen and (min-width: 410px) {
-      .main--vote {
-        max-height: unset; } }
   .main__content {
     width: 100%;
     align-self: stretch; }
@@ -1121,7 +1126,7 @@ body {
       @media screen and (orientation: landscape) {
         .main__content--chart {
           right: unset;
-          padding: 3.3rem 3.8rem 0; } }
+          padding: 3.3rem 4.928rem 0; } }
       @media screen and (min-width: 1200px) {
         .main__content--chart {
           padding: 3.3rem 15% 0; } }

@@ -152,10 +152,10 @@ function returnVote(data) {
 									<p class="person__name">${ data.users[1] ? data.users[1].name : '' }</p>
 								</div>
 							</div>
-							<div class="list-vote__central-container ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[3] ? '' : 'opacity: 0; visibility: hidden' }">
-								<p class="list-vote__emoji">${ data.users[3] && data.users[3].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="person"><img class="person__avatar" src="./img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
-									<p class="person__name">${ data.users[3] ? data.users[3].name : '' }</p>
+							<div class="list-vote__central-container ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[4] ? '' : 'opacity: 0; visibility: hidden' }">
+								<p class="list-vote__emoji">${ data.users[4] && data.users[4].id === data.selectedUserId ? '👍' : '' }</p>
+								<div class="person"><img class="person__avatar" src="./img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
+									<p class="person__name">${ data.users[4] ? data.users[4].name : '' }</p>
 								</div>
 							</div>
 						</li>
@@ -202,18 +202,18 @@ function returnVote(data) {
 									<p class="person__name">${ data.users[2] ? data.users[2].name : '' }</p>
 								</div>
 							</div>
-							<div class="list-vote__person-container ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[4] ? '' : 'opacity: 0; visibility: hidden' }">
-								<p class="list-vote__emoji">${ data.users[4] && data.users[4].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
-									<p class="person__name">${ data.users[4] ? data.users[4].name : '' }</p>
-								</div>
-							</div>
-						</li>
-						<li class="list-vote__item u-df-center horizontal" style="${ data.users[5] ? '' : 'opacity: 0; visibility: hidden' }">
-							<div class="list-vote__person-container ${ data.users[5] && data.users[5].id === data.selectedUserId ? 'voted' : '' } u-df-center">
+							<div class="list-vote__person-container ${ data.users[5] && data.users[5].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[5] ? '' : 'opacity: 0; visibility: hidden' }">
 								<p class="list-vote__emoji">${ data.users[5] && data.users[5].id === data.selectedUserId ? '👍' : '' }</p>
 								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[5] ? data.users[5].avatar : '' }" alt="${ data.users[5] ? data.users[5].name : '' }">
 									<p class="person__name">${ data.users[5] ? data.users[5].name : '' }</p>
+								</div>
+							</div>
+						</li>
+						<li class="list-vote__item u-df-center horizontal" style="${ data.users[3] ? '' : 'opacity: 0; visibility: hidden' }">
+							<div class="list-vote__person-container ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } u-df-center">
+								<p class="list-vote__emoji">${ data.users[3] && data.users[3].id === data.selectedUserId ? '👍' : '' }</p>
+								<div class="list-vote__person person"><img class="person__avatar" src="./img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
+									<p class="person__name">${ data.users[3] ? data.users[3].name : '' }</p>
 								</div>
 							</div>
 						</li>
@@ -570,8 +570,8 @@ function returnDiagram(data) {
 									</defs>
 								</svg>
 								<div class="diagram__content u-df-column-center">
-									<div class="diagram__number">${ innerData.differenceText }</div>
-									<div class="diagram__plus">${ innerData.totalText }</div>
+									<div class="diagram__number">${ innerData.totalText }</div>
+									<div class="diagram__plus">${ innerData.differenceText }</div>
 								</div>
 							</div>
 						</div>
