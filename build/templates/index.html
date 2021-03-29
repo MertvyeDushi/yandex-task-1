@@ -16,7 +16,7 @@
           console.log(data)
           const queryParams = window.location.search.substring(1)
           const searchParams = new URLSearchParams(queryParams)
-          const slide = searchParams.get('slide') ? searchParams.get('slide') : 0
+          const slide = searchParams.get('slide') ? searchParams.get('slide') : 1
           const theme = searchParams.get('theme')
           const themeClassName = theme ? (theme === 'light' ? 'theme_light' : 'theme_dark') : ''
           const body = document.querySelector('body')

@@ -58,8 +58,8 @@ function returnLeaders(data) {
 								<p class="list-rectangle__rating list-rectangle__rating--2">1</p>
 							</div>
 
-							<div class="list-person list-person--float vertical" style="${ innerData.selectedUserId ? '' : 'opacity: 0; visibility: hidden' }">
-								<p class="list-person__emoji">👍</p>
+							<div class="list-person list-person--float vertical" style="${ innerData.selectedUserId ? ( innerData.users[4].id === innerData.selectedUserId ? '' : 'opacity: 0; visibility: hidden' ) : 'opacity: 0; visibility: hidden' }">
+								<p class="list-person__emoji">${ innerData.users[4].id === innerData.selectedUserId ? '👍' : '' }</p>
 								<div class="person"><img class="person__avatar" src="../img/${ innerData.users[4].avatar }" alt="${ innerData.users[4].name }">
 									<p class="person__name">${ innerData.users[4].name }</p>
 								</div>
@@ -152,10 +152,10 @@ function returnVote(data) {
 									<p class="person__name">${ data.users[1] ? data.users[1].name : '' }</p>
 								</div>
 							</div>
-							<div class="list-vote__central-container ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[4] ? '' : 'opacity: 0; visibility: hidden' }">
-								<p class="list-vote__emoji">${ data.users[4] && data.users[4].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="person"><img class="person__avatar" src="../img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
-									<p class="person__name">${ data.users[4] ? data.users[4].name : '' }</p>
+							<div class="list-vote__central-container ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[3] ? '' : 'opacity: 0; visibility: hidden' }">
+								<p class="list-vote__emoji">${ data.users[3] && data.users[3].id === data.selectedUserId ? '👍' : '' }</p>
+								<div class="person"><img class="person__avatar" src="../img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
+									<p class="person__name">${ data.users[3] ? data.users[3].name : '' }</p>
 								</div>
 							</div>
 						</li>
@@ -202,18 +202,18 @@ function returnVote(data) {
 									<p class="person__name">${ data.users[2] ? data.users[2].name : '' }</p>
 								</div>
 							</div>
-							<div class="list-vote__person-container ${ data.users[5] && data.users[5].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[5] ? '' : 'opacity: 0; visibility: hidden' }">
-								<p class="list-vote__emoji">${ data.users[5] && data.users[5].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[5] ? data.users[5].avatar : '' }" alt="${ data.users[5] ? data.users[5].name : '' }">
-									<p class="person__name">${ data.users[5] ? data.users[5].name : '' }</p>
+							<div class="list-vote__person-container ${ data.users[4] && data.users[4].id === data.selectedUserId ? 'voted' : '' } u-df-center" style="${ data.users[4] ? '' : 'opacity: 0; visibility: hidden' }">
+								<p class="list-vote__emoji">${ data.users[4] && data.users[4].id === data.selectedUserId ? '👍' : '' }</p>
+								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[4] ? data.users[4].avatar : '' }" alt="${ data.users[4] ? data.users[4].name : '' }">
+									<p class="person__name">${ data.users[4] ? data.users[4].name : '' }</p>
 								</div>
 							</div>
 						</li>
-						<li class="list-vote__item u-df-center horizontal" style="${ data.users[3] ? '' : 'opacity: 0; visibility: hidden' }">
-							<div class="list-vote__person-container ${ data.users[3] && data.users[3].id === data.selectedUserId ? 'voted' : '' } u-df-center">
-								<p class="list-vote__emoji">${ data.users[3] && data.users[3].id === data.selectedUserId ? '👍' : '' }</p>
-								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[3] ? data.users[3].avatar : '' }" alt="${ data.users[3] ? data.users[3].name : '' }">
-									<p class="person__name">${ data.users[3] ? data.users[3].name : '' }</p>
+						<li class="list-vote__item u-df-center horizontal" style="${ data.users[5] ? '' : 'opacity: 0; visibility: hidden' }">
+							<div class="list-vote__person-container ${ data.users[5] && data.users[5].id === data.selectedUserId ? 'voted' : '' } u-df-center">
+								<p class="list-vote__emoji">${ data.users[5] && data.users[5].id === data.selectedUserId ? '👍' : '' }</p>
+								<div class="list-vote__person person"><img class="person__avatar" src="../img/${ data.users[5] ? data.users[5].avatar : '' }" alt="${ data.users[5] ? data.users[5].name : '' }">
+									<p class="person__name">${ data.users[5] ? data.users[5].name : '' }</p>
 								</div>
 							</div>
 						</li>
@@ -627,11 +627,348 @@ function returnDiagram(data) {
 }
 
 
+function returnActivity(data) {
+
+	// Новый для меня опыт: никогда раньше так не собирал шаблоны.
+
+	let innerData = JSON.parse(JSON.stringify(data))
+
+	let str = `
+		<div class="container u-df-column-between">
+			<header class="header">
+				<h1 class="header__title title">${ innerData.title }</h1>
+				<p class="header__description description-text">${ innerData.subtitle }</p>
+			</header>
+	`
+
+	let verticalStart = `
+		<main class="main vertical">
+			<div class="main__content main__content--activity u-df-center">
+				<div class="activity-map u-df-center">
+	`
+
+	let verticalEnd = `
+				</div>
+			</div>
+		</main>
+	`
+
+	let weekStartVertical = `
+		<ul class="activity-map__list u-df-center"><!-- Неделя -->
+	`
+
+	let weekEndVertical = `</ul>`
+
+	let dayStartVertical = `
+		<li class="activity-map__list-item"><!-- День -->
+			<ul class="activity-map__item-list u-df-column-center"><!-- Список часов дня -->
+	`
+
+	let dayEndVertical = `
+			</ul>
+		</li>
+	`
+
+	let monVertical = innerData.data.mon.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let tueVertical = innerData.data.tue.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let wedVertical = innerData.data.wed.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let thuVertical = innerData.data.thu.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let friVertical = innerData.data.fri.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let satVertical = innerData.data.sat.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let sunVertical = innerData.data.sun.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+
+	let week = [ monVertical, tueVertical, wedVertical, thuVertical, friVertical, satVertical, sunVertical ]
+
+
+	for (let i = 0; i < week.length; i++) {
+		let tmp = week[i].join(' ')
+		week[i] = dayStartVertical + tmp + dayEndVertical
+	}
+
+	let tmp1 = week.join(' ')
+	
+	let weekVertical = weekStartVertical + tmp1 + weekEndVertical
+
+	let vertical = verticalStart + weekVertical + verticalEnd
+
+
+	// Кол-во коммитов (по 2 часа)
+	let tmpObj = {}
+
+	for (let variable in innerData.data) {
+		newTmpArray = []
+
+		for (let i = 0; i < innerData.data[variable].length; i += 2) {
+			newTmpArray.push( innerData.data[variable][i] + innerData.data[variable][i + 1] )
+		}
+
+		tmpObj[variable] = newTmpArray
+	}
+
+	
+	let horizontalStart = `
+		<main class="main horizontal">
+			<div class="main__content main__content--activity u-df-center">
+				<div class="activity-map u-df-center">
+	`
+
+	let horizontalEnd = `
+				</div>
+			</div>
+		</main>
+	`
+
+	let weekStartHorizontal = `
+		<ul class="activity-map__list u-df-column-center">
+	`
+
+	let weekEndHorizontal = `</ul>`
+
+	let dayStartHorizontal = `
+		<li class="activity-map__list-item">
+			<ul class="activity-map__item-list u-df-center">
+	`
+
+	let dayEndHorizontal = `
+			</ul>
+		</li>
+	`
+
+	let monHorizontal = tmpObj.mon.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let tueHorizontal = tmpObj.tue.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let wedHorizontal = tmpObj.wed.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let thuHorizontal = tmpObj.thu.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let friHorizontal = tmpObj.fri.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let satHorizontal = tmpObj.sat.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let sunHorizontal = tmpObj.sun.map( h => {
+		return `
+			<li class="activity-map__bar activity-map__bar--${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }"><!-- Час -->
+				<div class="activity-map__bar-container">
+					<div class="activity-map__bar-content">
+						<img class="activity-map__bar-img dark" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-dark.svg">
+						<img class="activity-map__bar-img light" src="../img/${ h === 0 ? 'min' : ( ( h > 0 && h < 3 ) ? 'mid' : ( ( h > 2 && h < 5 ) ? 'max' : 'extra' ) ) }-light.svg">
+					</div>
+				</div>
+			</li>
+		`
+	})
+
+	let week2 = [ monHorizontal, tueHorizontal, wedHorizontal, thuHorizontal, friHorizontal, satHorizontal, sunHorizontal ]
+
+	
+	for (let i = 0; i < week2.length; i++) {
+		let tmp = week2[i].join(' ')
+		week2[i] = dayStartHorizontal + tmp + dayEndHorizontal
+	}
+
+	let tmp2 = week2.join(' ')
+
+	let weekHorizontal = weekStartHorizontal + tmp2 + weekEndHorizontal
+
+	let horizontal = horizontalStart + weekHorizontal + horizontalEnd
+
+
+	let footer = `
+		<footer class="activity-footer">
+			<ul class="legend-list u-df-center-between">
+				<li class="legend-list__item">
+					<div class="legend-list__designation legend-list__designation--1">
+						<div class="legend-list__designation-part-1"></div>
+						<div class="legend-list__designation-part-2"></div>
+						<div class="legend-list__designation-part-3"></div>
+					</div>
+					<p class="legend-list__description vertical">1 час</p>
+					<p class="legend-list__description horizontal">2 часа</p>
+				</li>
+				<li class="legend-list__item">
+					<div class="legend-list__designation legend-list__designation--2"></div>
+					<p class="legend-list__description">0</p>
+				</li>
+				<li class="legend-list__item">
+					<div class="legend-list__designation legend-list__designation--3"></div>
+					<p class="legend-list__description">1 — 2</p>
+				</li>
+				<li class="legend-list__item">
+					<div class="legend-list__designation legend-list__designation--4"></div>
+					<p class="legend-list__description">3 — 4</p>
+				</li>
+				<li class="legend-list__item">
+					<div class="legend-list__designation legend-list__designation--5"></div>
+					<p class="legend-list__description">5 — 6</p>
+				</li>
+			</ul>
+		</footer>
+		</div>
+	`
+
+	str = str + vertical + horizontal + footer
+
+	return str
+}
+
+
 function renderTemplate(alias, data) {
 	if (alias === 'leaders') return returnLeaders(data)
 	else if (alias === 'vote') return returnVote(data)
 	else if (alias === 'chart') return returnChart(data)
 	else if (alias === 'diagram') return returnDiagram(data)
+	else if (alias === 'activity') return returnActivity(data)
 	else return `<p>Извините, что-то пошло не так...</p>`
 }
 

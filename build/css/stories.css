@@ -1121,7 +1121,7 @@ body {
       @media screen and (orientation: landscape) {
         .main__content--chart {
           right: unset;
-          padding: 3.3rem 5.8rem 0; } }
+          padding: 3.3rem 3.8rem 0; } }
       @media screen and (min-width: 1200px) {
         .main__content--chart {
           padding: 3.3rem 15% 0; } }
