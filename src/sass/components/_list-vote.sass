@@ -20,6 +20,12 @@
 
 	&__person-container
 		height: 14.2rem
+		border-radius: .6rem
+
+		position: relative
+
+
+		@include hoverPerson
 
 
 	&__central-container
@@ -29,16 +35,9 @@
 		border-radius: .6rem
 
 		position: relative
+		
 
-
-		&--voted
-			background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, $color_container_voted--1 0%, $color_container_voted--2 100%)
-			box-shadow: inset -.1rem .1rem .1rem rgba($color_container_voted--3, .4), inset 0 .6rem 1.5rem rgba($color_container_voted--4, .4)
-
-
-		&--hovered
-			background: radial-gradient(85.62% 148.33% at 49.85% 100%, rgba($color_container_hovered--1, .7864) 0%, rgba($color_container_hovered--2, .8) 100%)
-			box-shadow: inset -.1rem .1rem .1rem rgba($color_container_hovered--3, .2), inset .2rem .2rem 1.6rem rgba($color_container_hovered--4, .1)
+		@include hoverPerson
 
 
 	&__emoji
@@ -62,14 +61,22 @@
 		width: 6.4rem
 		height: 6.4rem
 
+		cursor: pointer
+		transition: all .2s
+
 		background: $color_btn_dark
 		-webkit-mask: url(../img/button-dark.svg) no-repeat center / contain
 		mask: url(../img/button-dark.svg) no-repeat center / contain
 
 
-		&--disabled
+		&[disabled="true"], &:hover, &:active
 			background: $color_btn_dark--hover
 
 
 		&--up
 			transform: rotate(-180deg)
+
+
+.voted
+	background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, $color_container_voted--1 0%, $color_container_voted--2 100%)
+	box-shadow: inset -.1rem .1rem .1rem rgba($color_container_voted--3, .4), inset 0 .6rem 1.5rem rgba($color_container_voted--4, .4)

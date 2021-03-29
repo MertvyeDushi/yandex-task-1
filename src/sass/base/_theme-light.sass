@@ -3,7 +3,7 @@
 .theme_light
 
 
-	&.container
+	& .container
 		background: $color_bg_light
 		color: $color_text_light
 
@@ -26,21 +26,21 @@
 		box-shadow: inset -.1rem .1rem .1rem rgba($color_chart_secondary--4-light, .5), inset 0 0 2rem rgba($color_chart_secondary--5-light, .5)
 
 
-	& .list-vote__central-container--voted
+	& .voted
 		background: linear-gradient(180deg, $color_container_voted--1-light .82%, $color_container_voted--2-light 100%)
 		box-shadow: inset -.1rem .1rem .1rem rgba($color_container_voted--3-light, .5), inset 0 0 2rem rgba($color_container_voted--4-light, .8)
 
 
-	& .list-vote__central-container--hovered
+	& .list-vote__central-container:hover, & .list-vote__person-container:hover,
 		background: linear-gradient(180deg, rgba($color_container_hovered--1-light, .9) .82%, $color_container_hovered--2-light 100%, rgba($color_container_hovered--3-light, 0) 100%)
 		box-shadow: inset -.1rem .1rem .1rem rgba($color_container_hovered--4-light, .5), inset 0 0 2rem rgba($color_container_hovered--5-light, .5)
 
 
-	& .list-vote__btn
+	& .list-vote__btn[disabled="false"]
 		background: $color_btn_light
 
 
-	& .list-vote__btn--disabled
+	& .list-vote__btn[disabled="true"], & .list-vote__btn:hover, & .list-vote__btn:active
 		background: $color_btn_light--hover
 
 
@@ -153,4 +153,4 @@
 
 
 	& .activity-map__bar--min img
-		
+
