@@ -318,13 +318,14 @@ function returnDiagram(data) {
 
 	// Для резиновой верстки повесить событие resize на window: вычислять значения widthVertical, R1 и R2, пересчитывать координаты точек эллиптических кривых.
 
-	const R1 = 164  // vertical
-	const R2 = 120 // horizontal
+	const R1 = 163.5  // vertical
+	const R2 = 119 // horizontal
+	const coef = 0.705
 
 	const widthVertical = 328 // px
 
-	const mainArcDataVertical = getMainArcData(innerData.categories[0].valueText, totalValue, R1, 0.7)
-	const mainArcDataHorizontal = getMainArcData(innerData.categories[0].valueText, totalValue, R2, 0.7)
+	const mainArcDataVertical = getMainArcData(innerData.categories[0].valueText, totalValue, R1, coef)
+	const mainArcDataHorizontal = getMainArcData(innerData.categories[0].valueText, totalValue, R2, coef)
 
 	const secondArcDataVertical = getSecondaryArcData(innerData.categories[1].valueText, totalValue, R1, mainArcDataVertical.r2, mainArcDataVertical.end)
 	const secondArcDataHorizontal = getSecondaryArcData(innerData.categories[1].valueText, totalValue, R2, mainArcDataHorizontal.r2, mainArcDataHorizontal.end)
@@ -942,15 +943,15 @@ function returnActivity(data) {
 				</li>
 				<li class="legend-list__item">
 					<div class="legend-list__designation legend-list__designation--3"></div>
-					<p class="legend-list__description">1 — 2</p>
+					<p class="legend-list__description">1 — 2</p>
 				</li>
 				<li class="legend-list__item">
 					<div class="legend-list__designation legend-list__designation--4"></div>
-					<p class="legend-list__description">3 — 4</p>
+					<p class="legend-list__description">3 — 4</p>
 				</li>
 				<li class="legend-list__item">
 					<div class="legend-list__designation legend-list__designation--5"></div>
-					<p class="legend-list__description">5 — 6</p>
+					<p class="legend-list__description">5 — 6</p>
 				</li>
 			</ul>
 		</footer>
@@ -982,7 +983,7 @@ function getMainArcData(value, valuesSum, r1, coef) {
 	
 
 	// Находим координаты для левой стороны:
-	let alfa = 90 + degrees
+	let alfa = 90 + degrees - 0.1 // -0.1 degree - корректировка отображения диаграммы
 
 	let x_1 = r1 * Math.cos(alfa * Math.PI / 180)
 	let x_svg_1 = r1 + x_1
@@ -992,7 +993,7 @@ function getMainArcData(value, valuesSum, r1, coef) {
 
 
 	// Находим координаты для правой стороны:
-	let omega = 90 - degrees
+	let omega = 90 - degrees + 0.1 // +0.1 degree - корректировка отображения диаграммы
 
 	let x_2 = r1 * Math.cos(omega * Math.PI / 180)
 	let x_svg_2 = r1 + x_2

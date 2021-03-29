@@ -15,12 +15,12 @@
 
 
 	&--0, &--1
-		left: 43.61%
+		left: 43.91%
 		transform: translateX(-50%)
 
 
 	&--3, &--4
-		right: 43.61%
+		right: 43.71%
 		transform: translateX(50%)
 
 
@@ -29,6 +29,8 @@
 
 		position: absolute
 		bottom: 0
+
+		margin-bottom: 1.58rem
 
 
 	&__separator
@@ -47,7 +49,7 @@
 
 		position: absolute
 
-		top: -2.2rem
+		top: -2.3rem
 
 		z-index: 1
 
@@ -59,7 +61,7 @@
 		font-weight: normal
 		color: $color_list_person_value
 
-		margin-top: .4rem
+		margin-top: .9rem
 
 
 .list-rectangle
@@ -76,27 +78,33 @@
 
 
 	&--1
-		height: 43.20% // 22.5rem
+		height: 43.20%
+		min-height: 22.506rem
 
 
 		@media screen and (orientation: landscape)
-			height: 33.742% // 8.8rem
+			height: 33.742%
+			min-height: unset
 
 
 	&--2
-		height: 62.385% // 32.5rem
+		height: 62.385%
+		min-height: 32.502rem
 
 
 		@media screen and (orientation: landscape)
 			height: 41.39%
+			min-height: unset
 
 
 	&--3
-		height: 52.787% // 27.5rem
+		height: 52.787%
+		min-height: 27.502rem
 
 
 		@media screen and (orientation: landscape)
-			height: 33.742% // 8.8rem
+			height: 33.742%
+			min-height: unset
 
 
 	&__rating
@@ -112,7 +120,7 @@
 
 		&--0, &--1
 			transform: translateX(-50%)
-			left: 43.61% // 4.2rem
+			left: 43.959%
 
 
 		&--2
@@ -122,13 +130,13 @@
 
 		&--3, &--4
 			transform: translateX(50%)
-			right: 43.61% // 4.2rem
+			right: 43.39%
 
 
 		&--float
 			position: relative
 			top: unset
-			margin-top: .6rem
+			margin-top: .5rem
 
 
 .list-leaders
@@ -137,7 +145,7 @@
 
 
 	&__item
-		width: 36.59% // 12rem
+		width: 37.49% // 12rem
 		height: 100%
 
 		flex-shrink: 0
@@ -146,7 +154,7 @@
 
 
 		@media screen and (orientation: landscape)
-			width: 19.356% // 12rem
+			width: 19.556% // 12rem
 
 
 		&--primary
@@ -176,16 +184,16 @@
 
 			@media screen and (orientation: landscape)
 				display: flex
-				right: calc( -2.581% * 2 )
+				right: calc( -2.521% * 2 )
 
 
 		&--1
-			right: -3.879% // -2.4rem
+			right: -4.879% // -2.4rem
 			z-index: 1
 
 
 			@media screen and (orientation: landscape)
-				right: -2.581%
+				right: -2.521%
 
 
 		&--2
@@ -193,12 +201,12 @@
 
 
 		&--3
-			left: -3.879% // -2.4rem
+			left: -4.879% // -2.4rem
 			z-index: 1
 
 
 			@media screen and (orientation: landscape)
-				left: -2.581%
+				left: -2.521%
 
 
 		&--4
@@ -207,4 +215,4 @@
 
 			@media screen and (orientation: landscape)
 				display: flex
-				left: calc( -2.581% * 2 )
+				left: calc( -2.521% * 2 )

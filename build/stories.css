@@ -356,16 +356,16 @@ body {
     text-align: right;
     color: #918F8A; }
   .diagram-footer__prev {
-    margin-right: 1.6rem; }
+    margin-right: 1.7rem; }
 
 .activity-footer {
   width: 100%;
   padding: 0 2.4rem 2.4rem;
-  margin-top: 4.967rem; }
+  margin-top: 4.17rem; }
   @media screen and (orientation: landscape) {
     .activity-footer {
       padding: 0 16.8rem 5.8rem;
-      margin-top: 3.2rem; } }
+      margin-top: 3.055rem; } }
 
 .list-person {
   height: 12.6rem;
@@ -376,15 +376,16 @@ body {
     position: absolute;
     top: -14.2rem; }
   .list-person--0, .list-person--1 {
-    left: 43.61%;
+    left: 43.91%;
     transform: translateX(-50%); }
   .list-person--3, .list-person--4 {
-    right: 43.61%;
+    right: 43.71%;
     transform: translateX(50%); }
   .list-person--float {
     height: 17.4rem;
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    margin-bottom: 1.58rem; }
   .list-person__separator {
     margin: .9rem auto 0; }
   .list-person__emoji {
@@ -396,7 +397,7 @@ body {
     letter-spacing: .39px;
     color: #FCFBF7;
     position: absolute;
-    top: -2.2rem;
+    top: -2.3rem;
     z-index: 1; }
   .list-person__value {
     font-size: 1.4rem;
@@ -404,7 +405,7 @@ body {
     text-align: center;
     font-weight: normal;
     color: #BFBFBF;
-    margin-top: .4rem; }
+    margin-top: .9rem; }
 
 .list-rectangle {
   border-top-left-radius: .6rem;
@@ -414,20 +415,26 @@ body {
   .list-rectangle--0, .list-rectangle--4 {
     height: 26.07%; }
   .list-rectangle--1 {
-    height: 43.20%; }
+    height: 43.20%;
+    min-height: 22.506rem; }
     @media screen and (orientation: landscape) {
       .list-rectangle--1 {
-        height: 33.742%; } }
+        height: 33.742%;
+        min-height: unset; } }
   .list-rectangle--2 {
-    height: 62.385%; }
+    height: 62.385%;
+    min-height: 32.502rem; }
     @media screen and (orientation: landscape) {
       .list-rectangle--2 {
-        height: 41.39%; } }
+        height: 41.39%;
+        min-height: unset; } }
   .list-rectangle--3 {
-    height: 52.787%; }
+    height: 52.787%;
+    min-height: 27.502rem; }
     @media screen and (orientation: landscape) {
       .list-rectangle--3 {
-        height: 33.742%; } }
+        height: 33.742%;
+        min-height: unset; } }
   .list-rectangle__rating {
     font-size: 3rem;
     font-weight: bold;
@@ -437,29 +444,29 @@ body {
     top: 1.8rem; }
     .list-rectangle__rating--0, .list-rectangle__rating--1 {
       transform: translateX(-50%);
-      left: 43.61%; }
+      left: 43.959%; }
     .list-rectangle__rating--2 {
       left: 0;
       right: 0; }
     .list-rectangle__rating--3, .list-rectangle__rating--4 {
       transform: translateX(50%);
-      right: 43.61%; }
+      right: 43.39%; }
     .list-rectangle__rating--float {
       position: relative;
       top: unset;
-      margin-top: .6rem; }
+      margin-top: .5rem; }
 
 .list-leaders {
   list-style-type: unset;
   height: 100%; }
   .list-leaders__item {
-    width: 36.59%;
+    width: 37.49%;
     height: 100%;
     flex-shrink: 0;
     position: relative; }
     @media screen and (orientation: landscape) {
       .list-leaders__item {
-        width: 19.356%; } }
+        width: 19.556%; } }
     .list-leaders__item--primary .list-rectangle {
       background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%);
       box-shadow: inset -0.1rem 0.1rem 0.1rem rgba(255, 255, 255, 0.4), inset 0 0.6rem 1.5rem rgba(255, 162, 0, 0.4); }
@@ -473,27 +480,27 @@ body {
       @media screen and (orientation: landscape) {
         .list-leaders__item--0 {
           display: flex;
-          right: calc( -2.581% * 2); } }
+          right: calc( -2.521% * 2); } }
     .list-leaders__item--1 {
-      right: -3.879%;
+      right: -4.879%;
       z-index: 1; }
       @media screen and (orientation: landscape) {
         .list-leaders__item--1 {
-          right: -2.581%; } }
+          right: -2.521%; } }
     .list-leaders__item--2 {
       z-index: 2; }
     .list-leaders__item--3 {
-      left: -3.879%;
+      left: -4.879%;
       z-index: 1; }
       @media screen and (orientation: landscape) {
         .list-leaders__item--3 {
-          left: -2.581%; } }
+          left: -2.521%; } }
     .list-leaders__item--4 {
       display: none; }
       @media screen and (orientation: landscape) {
         .list-leaders__item--4 {
           display: flex;
-          left: calc( -2.581% * 2); } }
+          left: calc( -2.521% * 2); } }
 
 .list-vote {
   list-style-type: unset;
@@ -535,7 +542,7 @@ body {
     letter-spacing: .39px;
     color: #FCFBF7;
     position: absolute;
-    top: -.4rem;
+    top: -.3rem;
     z-index: 1; }
   .list-vote__btn {
     width: 6.4rem;
@@ -548,7 +555,12 @@ body {
     .list-vote__btn[disabled="true"], .list-vote__btn:hover, .list-vote__btn:active {
       background: #918F8A; }
     .list-vote__btn--up {
-      transform: rotate(-180deg); }
+      transform: rotate(-180deg);
+      position: relative;
+      top: -.1rem; }
+    .list-vote__btn--down {
+      position: relative;
+      top: .1rem; }
 
 .voted {
   background: radial-gradient(91.67% 122.17% at 69.17% -11.17%, #FFA300 0%, #2D1C00 100%);
@@ -638,6 +650,9 @@ body {
   .legend-list__item {
     display: inline-block;
     width: 5.92rem; }
+    @media screen and (orientation: landscape) {
+      .legend-list__item {
+        text-align: center; } }
   .legend-list__designation {
     height: 1.2rem;
     margin-bottom: .8rem; }
@@ -681,9 +696,12 @@ body {
     @media screen and (orientation: landscape) {
       .legend-list__description {
         text-align: center; } }
+    @media screen and (orientation: landscape) {
+      .legend-list__description.horizontal {
+        display: inline-block !important; } }
 
 .person {
-  max-height: 10.6rem;
+  max-height: 10.2rem;
   width: 10.4rem;
   padding: 0 .4rem;
   text-align: center; }
@@ -693,7 +711,7 @@ body {
     filter: grayscale(100%);
     border-radius: 50%;
     display: inline-block;
-    margin-bottom: .6rem; }
+    margin-bottom: .2rem; }
   .person__name {
     display: inline-block;
     font-weight: 500;
@@ -787,9 +805,9 @@ body {
         width: 100%;
         position: relative; }
         .activity-map__list-item:nth-child(odd) {
-          left: -2.083%; }
+          left: -1.883%; }
         .activity-map__list-item:nth-child(even) {
-          right: -2.083%; }
+          right: -2.383%; }
         .activity-map__list-item:nth-child(0) {
           z-index: 0; } }
     @media screen and (orientation: landscape) and (orientation: landscape) {
@@ -1073,19 +1091,22 @@ body {
         .activity-map__bar:nth-child(24) {
           z-index: unset; } }
     .activity-map__bar:nth-child(odd) {
-      left: -25%; }
+      left: -25.5%; }
       @media screen and (orientation: landscape) {
         .activity-map__bar:nth-child(odd) {
           left: unset; } }
     .activity-map__bar:nth-child(even) {
-      right: -25%; }
+      right: -26%; }
       @media screen and (orientation: landscape) {
         .activity-map__bar:nth-child(even) {
           right: unset; } }
     .activity-map__bar-container {
       position: relative;
       height: 0;
-      padding-top: 38.875%; }
+      padding-top: 38.18%; }
+      @media screen and (orientation: landscape) {
+        .activity-map__bar-container {
+          padding-top: 38.475%; } }
     .activity-map__bar-content {
       position: absolute;
       top: 0;
@@ -1115,7 +1136,7 @@ body {
       padding: 0 2.4rem; }
       @media screen and (orientation: landscape) {
         .main__content--vote {
-          padding: .5rem .1rem; } }
+          padding: .5rem 0; } }
     .main__content--vote-results {
       padding: 3.7rem 2.8rem 0; }
     .main__content--chart {
@@ -1131,10 +1152,14 @@ body {
         .main__content--chart {
           padding: 3.3rem 15% 0; } }
     .main__content--activity {
-      padding: 6.644rem 3.54rem 0; }
+      padding: 6.79rem 3.49rem 0;
+      position: relative;
+      left: -0.4px;
+      top: 0.3px; }
       @media screen and (orientation: landscape) {
         .main__content--activity {
-          padding: 7.39rem 12.1rem 0; } }
+          padding: 7.69rem 13rem 0;
+          top: .5px; } }
 
 .diagram-content {
   width: 100%;
