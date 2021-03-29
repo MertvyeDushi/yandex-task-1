@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/stories.css">
+    <link rel="stylesheet" href="/css/stories.css">
     <title>Yandex Stories | 1st task</title>
   </head>
   <body>
@@ -13,7 +13,6 @@
         .then( response => response.json() )
         .then( response => {
           let data = response
-          console.log(data)
           const queryParams = window.location.search.substring(1)
           const searchParams = new URLSearchParams(queryParams)
           const slide = searchParams.get('slide') ? searchParams.get('slide') : 1
