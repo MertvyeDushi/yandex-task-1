@@ -1,5 +1,8 @@
 # Yandex Task 1
 
+Техническое задание: https://github.com/yndx-shri/shri-2021-task-1#readme
+
+
 ## Project setup
 ```
 npm i
